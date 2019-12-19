@@ -29,6 +29,13 @@ Thailand<br>
 * IT Director - Payap University
 * Praceptor Emeritus - Payap University
 
+# Interests
+* Machine learning and Data Science
+* Natural language processing and support of prepublication editing
+* Web and online community development
+* Blended and online education
+* Bible study and life application
+
 # Project experience with Languages
 * Computer programming: 6809 Assembler, C, BASIC, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, TeX, XLISP, Visual Basic,  Python, LaTeX, VBA, Ruby, Java, PHP, R, JavaScript
 * Human: English, Thai, French, German
