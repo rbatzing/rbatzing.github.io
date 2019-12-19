@@ -1,4 +1,4 @@
-!(R Batzinger)[bob5.png]
+!(R Batzinger)[img/bob5.png]
 
 <font size=6>**DR ROBERT P BATZINGER**</font><br/>
 __Praeceptor Emeritus__<br/>
