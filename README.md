@@ -1,4 +1,4 @@
-<img src="http://rbatzing.github.io/img/bob5.png" alt="RPB Photo"/>
+<img src="http://rbatzing.github.io/img/bob5.png" alt="RPB Photo" align="right" width="30%"/>
 
 <font size=6>**DR ROBERT P BATZINGER**</font><br/>
 __Praeceptor Emeritus__<br/>
