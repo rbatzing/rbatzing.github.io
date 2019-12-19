@@ -1,5 +1,4 @@
-<img src="./bob5.png" width="30%" align=right alt="R Batzinger"/>
-<br clear=all/>
+![R Batzinger](bob5.png)
 
 **DR ROBERT P BATZINGER**<br/>
 __Praeceptor Emeritus__<br/>
