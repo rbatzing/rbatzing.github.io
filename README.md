@@ -1,6 +1,6 @@
 <img src="bob5.png" align=right width= 30%>
 
-**DR ROBERT P BATZINGER**<br/>
+<font size=6>**DR ROBERT P BATZINGER**</font><br/>
 __Praeceptor Emeritus__<br/>
 Payap University<br>
 Faculty of Science<br>
