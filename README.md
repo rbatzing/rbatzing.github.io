@@ -29,8 +29,15 @@ Thailand<br>
 * IT Director - Payap University
 * Praceptor Emeritus - Payap University
 
-# Contacts
+# Project experience with Languages
+* Computer programming: 6809 Assembler, C, BASIC, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, TeX, XLISP, Python, LaTeX, Ruby, Java, PHP, R, JavaScript
+* Human: English, Thai, French, German
+* Os: CP/M, UNIX, MSDOS, MS Windows, OsX, Linux
+* Version control: RCS, CVS, Subversion, Bazaar, GIT
+* Open standards: HTML, CSS, XML, RSS, GPX, ISO9001, ISO29110
 
+# Contact Info
 * [Web Page](http://science.payap.ac.th/cs/bob)
-* [LinkedIn](https://www.linkedin.com/in/robert-batzinger/)
+* [LinkedIn](https://www.linkedin.com/in/robert-batzinger)
+* [Twitter](https://twitter.com/rbatz)
 
