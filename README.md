@@ -32,7 +32,7 @@ Thailand<br>
 # Project experience with Languages
 * Computer programming: 6809 Assembler, C, BASIC, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, TeX, XLISP, Visual Basic,  Python, LaTeX, VBA, Ruby, Java, PHP, R, JavaScript
 * Human: English, Thai, French, German
-* Os: CP/M, UNIX, MSDOS, MS Windows, OsX, Linux, KSH, BASH, SSH
+* Os: CP/M, UNIX, MSDOS, MS Windows, OsX, Linux, KSH, BASH, SSH, Ardunio, Android
 * Version control: RCS, CVS, Subversion, Bazaar, GIT
 * Open standards: HTML, CSS, XML, RSS, GPX, ISO9001, ISO29110
 
