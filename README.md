@@ -1,4 +1,4 @@
-<img src="https://gitlab.com/rbatzing/resume/raw/master/bob5.png" width="30%" align=right alt="R Batzinger"/>
+<img src="./bob5.png" width="30%" align=right alt="R Batzinger"/>
 <br clear=all/>
 
 **DR ROBERT P BATZINGER**<br/>
