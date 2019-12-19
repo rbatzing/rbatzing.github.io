@@ -37,7 +37,7 @@ Thailand<br>
 * Bible study and life application
 
 # Project experience with Languages
-* Computer programming: 6809 Assembler, C, BASIC, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, TeX, XLISP, Visual Basic,  Python, LaTeX, VBA, Ruby, Java, PHP, R, JavaScript
+* Computer programming: 6809 Assembler, C, BASIC, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, TeX, XLISP, Visual Basic, SQL, Python, LaTeX, VBA, Ruby, Java, PHP, Ruby on Rails, R, JavaScript, Angular JS, Node JS, NoSQL
 * Human: English, Thai, French, German
 * Os: CP/M, UNIX, MSDOS, MS Windows, OsX, Linux, KSH, BASH, SSH, Ardunio, Android
 * Version control: RCS, CVS, Subversion, Bazaar, GIT
