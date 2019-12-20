@@ -17,8 +17,10 @@ Thailand<br>
 * MS Applied Mathematics and Computer Science - Indiana University - South Bend
 
 # Experience
-* Research Assistant - Wellcome Lab, Johns Hopkins University
-* Post Doctoral Fellow - McArdle Labs, University of Wisconsin at Madison
+* Summer Intern - New York State Rabies Screening Laboratory
+* Undergraduate Research Opportunity Interrn - Environmental Health Sciences Center, Massachuesetts Institute of Technology
+* Research Assistant - Wellcome Laboratory, Johns Hopkins University 
+* Post Doctoral Fellow - McArdle Laboratory, University of Wisconsin at Madison
 * Project Head - Faculty of Pharmacy, Payap University
 * Acting Dean - Faculty of Science, Payap University
 * Software Development Lead - Computer-Assisted Text Processing Center, Thailand Bible Society
