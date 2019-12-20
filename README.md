@@ -2,11 +2,12 @@
 
 **DR ROBERT P BATZINGER**
 
-> _Praeceptor Emeritus_
-> Payap University
-> Faculty of Science
-> Chiang Mai 50000
-> Thailand
+> _Praeceptor Emeritus_<br />
+> Payap University<br />
+> Faculty of Science<br />
+> Amphur Muang<br />
+> Chiang Mai 50000<br />
+> Thailand<br />
 
 
 
