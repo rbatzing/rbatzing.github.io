@@ -9,8 +9,6 @@
 > Chiang Mai 50000<br />
 > Thailand<br />
 
-
-
 # Education
 * SB Chemistry - Massachusetts Institute of Technology
 * PhD Pathobiology - Johns Hopkins University
@@ -32,9 +30,9 @@
 * Praceptor Emeritus - Payap University
 
 # Interests
-* Applied machine learning and data science
-* Natural language processing and automated prepublication editing support
-* Web and online community development
+* Applied machine learning, data science, modeling and forecasting to assist decision making
+* Natural language processing to automate prepublication editing support
+* Web and online community development and e-business
 * Blended and online education for higher education and livelong learning
 * Bible study and life application
 
