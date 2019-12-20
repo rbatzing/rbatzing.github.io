@@ -29,10 +29,10 @@ Thailand<br>
 * Praceptor Emeritus - Payap University
 
 # Interests
-* Machine learning and Data Science
-* Natural language processing and support of prepublication editing
+* Applied machine learning and data science
+* Natural language processing and automated prepublication editing support
 * Web and online community development
-* Blended and online education for students and livelong learners
+* Blended and online education for higher education and livelong learning
 * Bible study and life application
 
 # Project experience with Languages
