@@ -2,7 +2,7 @@
 
 **DR ROBERT P BATZINGER**
 
-__Praeceptor Emeritus__<br/>
+_Praeceptor Emeritus_<br/>
 Payap University<br>
 Faculty of Science<br>
 Chiang Mai 50000<br>
@@ -36,7 +36,7 @@ Thailand<br>
 * Bible study and life application
 
 # Project experience with Languages
-* Computer programming: Fortran 4, 6809 Assembler, C, BASIC, Forth, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, Fortran 77, TeX, XLISP, Visual Basic, SQL, Python, LaTeX, VBA, Ruby, Java, PHP, Ruby on Rails, R, JavaScript, Angular JS, Node JS, NoSQL, Bender
+* Computer programming: Fortran 4, 6809 Assembler, C, BASIC, Forth, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, Fortran 77, TeX, Metafont, XLISP, Visual Basic, SQL, Python, LaTeX, VBA, Ruby, Java, PHP, Ruby on Rails, R, JavaScript, Angular JS, Node JS, NoSQL, Bender
 * Human: English, Thai, French, German
 * OS Command shells: CP/M, UNIX, MSDOS, MS Windows, OsX, Linux, KSH, BASH, SSH, Ardunio, Android
 * Version control: RCS, CVS, Subversion, Bazaar, GIT
