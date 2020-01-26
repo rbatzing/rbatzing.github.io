@@ -1,10 +1,6 @@
 <img src="http://rbatzing.github.io/img/bob5.png" alt="RPB Photo" align="right" width="30%"/>
 
-# DR ROBERT P BATZINGER
-## _Curriculum vitae brevis_
-
-
-
+# _Robert P Batzinger_
 > _Praeceptor Emeritus_<br />
 > Payap University<br />
 > Faculty of Science<br />
