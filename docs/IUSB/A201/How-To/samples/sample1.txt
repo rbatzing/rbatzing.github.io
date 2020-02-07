@@ -1,0 +1,16 @@
+
+class Vector
+
+    attr_reader :x, :y                               # A
+ 
+    @@vectors = Array.new                      # B
+
+     def initialize(x,y) @x = x; @y = y; end  # C
+
+     def x=(value) @x = value;   end          # D
+
+     def to_s()   “(#{@x}, #{@y})”;  end   # E
+      
+     def reflect() @x, @y = @y, @x; end    #F
+
+end

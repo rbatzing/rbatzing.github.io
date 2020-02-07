@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Assignments</title>
+    <link href="SP09-SB-CSCI-A201-27137_data/tool_base.css" type="text/css" rel="stylesheet" media="all">
+<link href="SP09-SB-CSCI-A201-27137_data/tool.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" language="JavaScript" src="assign5_files/headscripts.js"></script>
+	
+    
+    		<!-- vm/editor/FCKeditor/sakai_header.vm -->
+	<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/fckeditor.js"></script>
+    
+  </head>
+  <body onload="setMainFrameHeight('Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9');setFocus(focus_path);">
+<script type="text/javascript" src="assign5_files/jquery.js"></script>
+<link href="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignment.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignments.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    setupToggleAreas('toggleAnchor', 'toggledContent', false, 'fast');
+    $('#submissionFileCount').val(1);
+    $('#addMoreAttachmentControls').click(function(e){
+        e.preventDefault();
+        if ($('#submissionFileCount').val() < 5) {
+            var $input = $('#clonableUpload').clone().removeAttr('id').addClass('cloned').appendTo('#clonedHolder').children('input');
+            $input.val('');
+            var $count = $('#submissionFileCount').val();
+            var $nameCount = "upload"+$count;
+            $input.attr("name", $nameCount);
+            $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) + 1);
+            if ($('#submissionFileCount').val() == 5) {
+                $('#addMoreAttachmentControls').hide();
+                $('#addMoreAttachmentControlsInactive').show();
+            }
+        }
+        $('.cloned a').show();
+        resizeFrame('grow');
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) - 1);
+    if ($('#submissionFileCount').val() < 5) {
+        $('#addMoreAttachmentControls').show();
+        $('#addMoreAttachmentControlsInactive').hide();
+    }
+};
+
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm && theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm && theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+</script>
+
+
+<div class="portletBody">
+								<div class="alertMessage">The close date of the assignment has passed. You can no longer submit an answer.</div><div class="clear"></div>
+				<table class="itemSummary" summary="The assignment info">
+				<tbody><tr>
+					<th>
+						Title
+					</th>
+					<td>
+						Assignment 5
+																	</td>
+				</tr>
+				<tr>
+					<th>
+						Due
+					</th>
+					<td>
+						Mar 13, 2009 5:00 pm
+					</td>
+				</tr>
+																					<tr>
+					<th>
+						Status
+					</th>
+					<td>
+																					In progress
+																		</td>
+				</tr>
+																			<tr>	
+							<th>
+								Grade Scale
+							</th>
+							<td>
+								Ungraded
+															</td>
+						</tr>
+																						<tr>
+						<th>
+								Modified by instructor
+						</th>
+						<td>
+							Mar 3, 2009 3:47 am
+						</td>
+					</tr>
+											</tbody></table>
+		<h4>
+			Instructions
+		</h4>
+		
+					<div class="textPanel">The object of thisassignment, is to 
+implement a Ruby program that would play a HiLo game with the user 
+according to the following class design:<br>
+<img alt="" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/hilo.jpg"> <br>
+The Class Guess constructor should merely call the get_guess() method 
+and return. The get_guess() method is given below: You will note that in
+ this program every guess is a new instance of the Guess class.<br>
+<br>
+<hr>
+<br>
+########################################################<br>
+#&nbsp; Guess.get_guess<br>
+<code># Purpose: return a proper guess or end of game signal<br>
+# Tasks undertaken:<br>
+#&nbsp;&nbsp;&nbsp; 1. Loop until a proper input is obtained<br>
+#&nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp;&nbsp; Prompt user for input<br>
+#&nbsp;&nbsp;&nbsp; 3.&nbsp;&nbsp;&nbsp; Accept the input string and strip off the newline char<br>
+#&nbsp;&nbsp;&nbsp; 4.&nbsp;&nbsp;&nbsp; Reject input if non-digits were submitted<br>
+#&nbsp;&nbsp;&nbsp; 5.&nbsp;&nbsp;&nbsp; Check if the value is in the proper range<br>
+#&nbsp;&nbsp;&nbsp; 
+6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Establish
+ the integer value of the guess and return<br>
+# &nbsp;&nbsp; 7.&nbsp;&nbsp;&nbsp; Display error message and repeat otherwise<br>
+<br>
+</code><code>&nbsp; def get_guess()</code><br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; loop do<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print "Your choice 0-#{RANGE - 1} (-1 to quit):"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; value = gets.chomp<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if value =~ /[^0-9\-]/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; puts " Invalid input. Please enter an integer\n"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @value = 
+value.to_i &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case @value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; when -1..(RANGE - 1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ @value = value.to_i<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ puts "&nbsp; Invalid number. Please try again."<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br>
+&nbsp;&nbsp; end<br>
+</code><hr>
+<br>
+You will need to create the HiLo class with 3 methods which are described below:<br>
+<br>
+<hr>
+<br>
+1) Constructor method:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Actions:<br>
+<span style="background-color: Yellow;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome the user </span><br>
+<hr>
+&nbsp;&nbsp;<br>
+2) New game setup method<br>
+&nbsp; &nbsp; &nbsp; Actions: <br>
+&nbsp;<span style="background-color: Yellow;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="background-color: Yellow;">Zero the counters for the number of guesses<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Set the target number to a random value between 0 and 99 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Set the last guess value to -1</span><br>
+<hr>
+<br>
+3) Method for managing the game<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Actions:<br>
+&nbsp;<span style="background-color: Yellow;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Loop until the guess value equals the target<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Create an instance of&nbsp; a guess<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Increment the guess counter<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Compare the guess value with the target number<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ if the guess was too high or too low tell this to the user<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ if the guess is to exit the program signal of -1, exit the 
+program&nbsp; with exit(0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Congraduate the user and display the number of guesses that it took<br>
+</span><br>
+&nbsp;&nbsp;<hr>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+The actual program code that uses&nbsp; these classes is given below:<br>
+<br>
+<hr>
+<br>
+<code>RANGE = 100<br>
+g = HiLo.new<br>
+ans = 'y'<br>
+while ((ans == 'y') || (ans == 'Y'))<br>
+&nbsp;&nbsp;&nbsp; g.new_game<br>
+&nbsp;&nbsp;&nbsp; g.manage_game<br>
+&nbsp;&nbsp;&nbsp; print "Play another game (Y/N):"<br>
+&nbsp;&nbsp;&nbsp; ans = gets.chomp<br>
+end<br>
+puts "Good-bye"</code><br>
+<hr>
+<br>
+Once assembled, the program should work in the following manner:<br>
+<br>
+<hr>
+<br>
+C:\A201&gt;ruby hilow.rb<br>
+<br>
+<tt>Welcome to Hi Low<br>
+--------------------------<br>
+Your choice 0-99 (-1 to quit):50<br>
+&nbsp; Too high<br>
+Your choice 0-99 (-1 to quit):25<br>
+&nbsp; Too low<br>
+Your choice 0-99 (-1 to quit):37<br>
+&nbsp; Too low<br>
+Your choice 0-99 (-1 to quit):45<br>
+&nbsp; Too low<br>
+Your choice 0-99 (-1 to quit):48<br>
+&nbsp; Too high<br>
+Your choice 0-99 (-1 to quit):47<br>
+&nbsp; Too high<br>
+Your choice 0-99 (-1 to quit):46<br>
+&nbsp; You have guessed correctly<br>
+&nbsp; in 7 guesses.<br>
+Play another game (Y/N):n<br>
+Good-bye</tt><br>
+<hr>
+<br>
+Please place the completed program in your drop box.<br>
+<br></div>
+																									        	<script type="text/javascript" language="JavaScript">
+
+function saveChanges(formName, textAreaId) {
+	var _textArea = document.getElementById(textAreaId);
+	if (_textArea != null) {
+		if (typeof FCKeditorAPI != "undefined") {
+			var editor = FCKeditorAPI.GetInstance(textAreaId);
+			document[formName].savedText.value = editor.GetXHTML(false);
+		}
+	}
+}
+
+iframeId = 'Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9';
+
+</script>
+<form name="form" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post">
+	<input name="sakai_action" value="" type="hidden">
+	<input name="providerId" value="" type="hidden">
+	<input name="criteria" value="" type="hidden">
+	<input name="savedText" value="" type="hidden">
+					</form>
+				<hr class="itemSeparator">
+						<h3>Submission</h3> 
+		
+
+
+					<form name="addSubmissionForm" id="addSubmissionForm" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post" onsubmit="return true;" enctype="multipart/form-data">
+		<input name="eventSubmit_doRead_add_submission_form" value="x" type="hidden">
+		<input name="option" id="option" value="cancel" type="hidden">
+		<input name="currentAttachment" value="" type="hidden">
+		<input name="assignmentId" value="/assignment/a/SP09-SB-CSCI-A201-27137/d2a3feea-ff5a-4b24-999a-dce77bc61d11" type="hidden">
+																															No attachments yet
+																<p class="act">
+				<input name="cancel" accesskey="x" id="cancel" value="Done" onclick="document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value='cancel'; document.addSubmissionForm.submit(); return false;" type="button">
+			</p>
+			</form>
+	</div>
+
+</body></html>

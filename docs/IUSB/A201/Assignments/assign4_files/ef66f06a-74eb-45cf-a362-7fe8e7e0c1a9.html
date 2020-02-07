@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Assignments</title>
+    <link href="SP09-SB-CSCI-A201-27137_data/tool_base.css" type="text/css" rel="stylesheet" media="all">
+<link href="SP09-SB-CSCI-A201-27137_data/tool.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" language="JavaScript" src="assign4_files/headscripts.js"></script>
+	
+    
+    		<!-- vm/editor/FCKeditor/sakai_header.vm -->
+	<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/fckeditor.js"></script>
+    
+  </head>
+  <body onload="setMainFrameHeight('Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9');setFocus(focus_path);">
+<script type="text/javascript" src="assign4_files/jquery.js"></script>
+<link href="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignment.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignments.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    setupToggleAreas('toggleAnchor', 'toggledContent', false, 'fast');
+    $('#submissionFileCount').val(1);
+    $('#addMoreAttachmentControls').click(function(e){
+        e.preventDefault();
+        if ($('#submissionFileCount').val() < 5) {
+            var $input = $('#clonableUpload').clone().removeAttr('id').addClass('cloned').appendTo('#clonedHolder').children('input');
+            $input.val('');
+            var $count = $('#submissionFileCount').val();
+            var $nameCount = "upload"+$count;
+            $input.attr("name", $nameCount);
+            $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) + 1);
+            if ($('#submissionFileCount').val() == 5) {
+                $('#addMoreAttachmentControls').hide();
+                $('#addMoreAttachmentControlsInactive').show();
+            }
+        }
+        $('.cloned a').show();
+        resizeFrame('grow');
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) - 1);
+    if ($('#submissionFileCount').val() < 5) {
+        $('#addMoreAttachmentControls').show();
+        $('#addMoreAttachmentControlsInactive').hide();
+    }
+};
+
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm && theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm && theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+</script>
+
+
+<div class="portletBody">
+								<div class="alertMessage">The close date of the assignment has passed. You can no longer submit an answer.</div><div class="clear"></div>
+				<table class="itemSummary" summary="The assignment info">
+				<tbody><tr>
+					<th>
+						Title
+					</th>
+					<td>
+						Assignment 4
+																	</td>
+				</tr>
+				<tr>
+					<th>
+						Due
+					</th>
+					<td>
+						Mar 6, 2009 5:00 pm
+					</td>
+				</tr>
+																					<tr>
+					<th>
+						Status
+					</th>
+					<td>
+																					In progress
+																		</td>
+				</tr>
+																			<tr>	
+							<th>
+								Grade Scale
+							</th>
+							<td>
+								Ungraded
+															</td>
+						</tr>
+																								</tbody></table>
+		<h4>
+			Instructions
+		</h4>
+		
+					<div class="textPanel"><h3 style="color: Red;">Extending petminder.rb</h3>
+The file <a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/Lecture%20Notes/12petminder.rb" target="_blank">petminder.rb</a> contains the Ruby code for an application to monitor the feeding and watering of pets.<br>
+&nbsp;<br>
+For this assignment, you are being asked to extend this program in the following way:<br>
+<br>
+1) Add a new subclass of Pet called <b><span style="font-family: Courier New;">Rock</span></b>. This class of pets eats <span style="font-family: Courier New;"><b>'nothing'</b></span> and uses <b><span style="font-family: Courier New;">'nothing' </span></b>as a water container. It never needs to be watered or fed and is always '<b><span style="font-family: Courier New;">content'</span></b>.
+ Users should be able to create and monitor instances of Rock Pets in 
+the same way they can with pets that are Horses, Dogs or Cats. Users 
+should be allowed to attempt to feed and water their pet Rock even 
+though these actions will only change the time of action and the Rock 
+status will remain the same. You will need to provide new&nbsp; local 
+definitions for the predicate methods of Pet and make appropriate 
+changes to methods in other classes to access instances of this new 
+class.<br>
+<br>
+2. Add a new method to Collection called <b><span style="font-family: Courier New;">feed_and_water.</span></b>
+ The purpose of this method is to feed all animals requiring food and 
+provide water to all animals requiring water. The method should not 
+attempt to feed animals that have already be fed or water animals that 
+have already be watered.  You will need to make appropriate changes to 
+methods in other classes to allow the user to access this new method.<br>
+<br>
+Please make all appropriate changes to your copy of petminder.rb and 
+test it using Ruby. Once you are satisfied that it is working, please 
+put a copy of the program and your output demonstrating that your 
+additions work in your dropbox.<br>
+<br>
+<br></div>
+																									        	<script type="text/javascript" language="JavaScript">
+
+function saveChanges(formName, textAreaId) {
+	var _textArea = document.getElementById(textAreaId);
+	if (_textArea != null) {
+		if (typeof FCKeditorAPI != "undefined") {
+			var editor = FCKeditorAPI.GetInstance(textAreaId);
+			document[formName].savedText.value = editor.GetXHTML(false);
+		}
+	}
+}
+
+iframeId = 'Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9';
+
+</script>
+<form name="form" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post">
+	<input name="sakai_action" value="" type="hidden">
+	<input name="providerId" value="" type="hidden">
+	<input name="criteria" value="" type="hidden">
+	<input name="savedText" value="" type="hidden">
+					</form>
+				<hr class="itemSeparator">
+						<h3>Submission</h3> 
+		
+
+
+					<form name="addSubmissionForm" id="addSubmissionForm" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post" onsubmit="return true;" enctype="multipart/form-data">
+		<input name="eventSubmit_doRead_add_submission_form" value="x" type="hidden">
+		<input name="option" id="option" value="cancel" type="hidden">
+		<input name="currentAttachment" value="" type="hidden">
+		<input name="assignmentId" value="/assignment/a/SP09-SB-CSCI-A201-27137/14125946-7056-4f3c-b929-0873ac771b19" type="hidden">
+																															No attachments yet
+																<p class="act">
+				<input name="cancel" accesskey="x" id="cancel" value="Done" onclick="document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value='cancel'; document.addSubmissionForm.submit(); return false;" type="button">
+			</p>
+			</form>
+	</div>
+
+</body></html>

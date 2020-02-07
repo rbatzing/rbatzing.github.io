@@ -1,0 +1,6 @@
+<h3 style="color: Red;">Useful links</h3>
+<ul>
+    <li><a href="http://www.ruby-lang.org/en/">http://www.ruby-lang.org/en/</a> Central website for all things Ruby including Ruby intepretors</li>
+    <li><a href="http://www.rubyist.net/">http://www.rubyist.net/</a> Portal sponsored by the designer of Ruby, provided examples of Ruby classes and methods The Nuts and Bolts pages are excellent illustrations of key features of Ruby. (There is also a Japanese blog here for those seeking life on the cutting edge of Ruby)</li>
+    <li><a href="http://rubyforge.org/">http://rubyforge.org/</a> A listing of over 1000 open source projects.</li>
+</ul>

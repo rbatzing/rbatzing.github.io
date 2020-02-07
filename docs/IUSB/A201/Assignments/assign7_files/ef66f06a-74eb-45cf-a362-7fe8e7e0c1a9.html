@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Assignments</title>
+    <link href="SP09-SB-CSCI-A201-27137_data/tool_base.css" type="text/css" rel="stylesheet" media="all">
+<link href="SP09-SB-CSCI-A201-27137_data/tool.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" language="JavaScript" src="assign7_files/headscripts.js"></script>
+	
+    
+    		<!-- vm/editor/FCKeditor/sakai_header.vm -->
+	<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/fckeditor.js"></script>
+    
+  </head>
+  <body onload="setMainFrameHeight('Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9');setFocus(focus_path);">
+<script type="text/javascript" src="assign7_files/jquery.js"></script>
+<link href="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignment.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignments.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    setupToggleAreas('toggleAnchor', 'toggledContent', false, 'fast');
+    $('#submissionFileCount').val(1);
+    $('#addMoreAttachmentControls').click(function(e){
+        e.preventDefault();
+        if ($('#submissionFileCount').val() < 5) {
+            var $input = $('#clonableUpload').clone().removeAttr('id').addClass('cloned').appendTo('#clonedHolder').children('input');
+            $input.val('');
+            var $count = $('#submissionFileCount').val();
+            var $nameCount = "upload"+$count;
+            $input.attr("name", $nameCount);
+            $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) + 1);
+            if ($('#submissionFileCount').val() == 5) {
+                $('#addMoreAttachmentControls').hide();
+                $('#addMoreAttachmentControlsInactive').show();
+            }
+        }
+        $('.cloned a').show();
+        resizeFrame('grow');
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) - 1);
+    if ($('#submissionFileCount').val() < 5) {
+        $('#addMoreAttachmentControls').show();
+        $('#addMoreAttachmentControlsInactive').hide();
+    }
+};
+
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm && theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm && theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+</script>
+
+
+<div class="portletBody">
+								<div class="alertMessage">The close date of the assignment has passed. You can no longer submit an answer.</div><div class="clear"></div>
+				<table class="itemSummary" summary="The assignment info">
+				<tbody><tr>
+					<th>
+						Title
+					</th>
+					<td>
+						Assignment 7
+																	</td>
+				</tr>
+				<tr>
+					<th>
+						Due
+					</th>
+					<td>
+						Apr 25, 2009 5:00 pm
+					</td>
+				</tr>
+																					<tr>
+					<th>
+						Status
+					</th>
+					<td>
+																					In progress
+																		</td>
+				</tr>
+																			<tr>	
+							<th>
+								Grade Scale
+							</th>
+							<td>
+								Ungraded
+															</td>
+						</tr>
+																						<tr>
+						<th>
+								Modified by instructor
+						</th>
+						<td>
+							Apr 15, 2009 10:03 pm
+						</td>
+					</tr>
+											</tbody></table>
+		<h4>
+			Instructions
+		</h4>
+		
+					<div class="textPanel">RSS news feeds are form of publishing that 
+places invites standardized files in a fixed location so that 
+subscribers can regularly download and use news readers to sort through 
+the newsfeed to gleen relevant news items. <br>
+<br>
+A type RSS feed looks like the following:<br>
+<code><small><tt><br>
+</tt></small></code><span style="background-color: rgb(204, 255, 255);"><code><small><tt>&lt;?xml version="1.0"?&gt;<br>
+&lt;rss&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;channel&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;title&gt;NYT - U.S.&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;link&gt;http://www.nytimes.com/pages/national/index.html?partner=rss&lt;/link&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;copyright&gt;Copyright 2009 The New York Times Company&lt;/copyright&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;lastBuildDate&gt;Thu, 16 Apr 2009 01:13:09 GMT&lt;/lastBuildDate&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;title&gt;NYT &amp;gt; U.S.&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&lt;url&gt;http://graphics.nytimes.com/images/section/NytSectionHeader.gif&lt;/url&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&lt;link&gt;http://www.nytimes.com/pages/national/index.html?partner=rss&lt;/link&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;item&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;title&gt;Tax Day Is Met With Tea Parties&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&lt;link&gt;http://feeds.nytimes.com/?i=8415b0764bea2eec397c94f9265f8f24&lt;/link&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&lt;description&gt;The government deadline for filing income tax returns
+ offered<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ some Americans a timely excuse to vent their frustrations over the 
+sagging<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ economy.&amp;lt;br clear=&amp;quot;both&amp;quot; 
+style=&amp;quot;clear: both;&amp;quot;/&amp;gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/description&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;dc:creator&gt;By LIZ ROBBINS&lt;/dc:creator&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;pubDate&gt;Thu, 16 Apr 2009 01:10:29 GMT&lt;/pubDate&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;category domain="http://www.nytimes.com/namespaces/keywords/"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Taxation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/category&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/item&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;item&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&lt;title&gt;N.S.A.&amp;#x2019;s Intercepts Exceed Limits Set by 
+Congress&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&lt;link&gt;http://feeds.nytimes.com/? 
+i=4f4f0888c4ba96520a8f756f0c7523ad<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/link&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;description&gt;The National Security Agency has intercepted private<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ e-mail messages and phone calls of Americans on a scale beyond the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ broad limits Congress has established.&amp;lt;br 
+clear=&amp;quot;both&amp;quot; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ style=&amp;quot;clear: both;&amp;quot;/&amp;gt;<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;/description&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;pubDate&gt;Thu, 16 Apr 2009 00:21:57 GMT&lt;/pubDate&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;category 
+domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; National Security Agency&lt;/category&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;category 
+domain="http://www.nytimes.com/namespaces/keywords/des"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Wiretapping and Other Eavesdropping Devices and 
+Methods&lt;/category&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/item&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/channel&gt;<br>
+&lt;/rss&gt;</tt></small></code></span><br>
+<br>
+The RSS makes it possible to deliver links to over a dozen news items and the related film clips, audio bites and news stories.<br>
+<br>
+The following Ruby program does the following:<br>
+<br>
+1) Connect to the internet<br>
+2) Download the contents of the current New York Times USA national news.<br>
+3) Store the contents of the file in the string buffer.<br>
+4) Parse the string into XML components.<br>
+5) Extract each news item separately<br>
+6) Display the title of a news item<br>
+7) Display the description of the news item<br>
+<br>
+<br>
+<span style="background-color: rgb(204, 255, 204);"><code>require 'net/http'<br>
+require 'rexml/document'<br>
+<br>
+url = 'http://feeds.nytimes.com/nyt/rss/US'<br>
+<br>
+# STEPS 1,2,3<br>
+xml_data = Net::HTTP.get_response(URI.parse(url)).body<br>
+<br>
+doc = REXML::Document.new(xml_data)<br>
+&nbsp;<br>
+doc.elements.each('rss/channel/item') do |item|<br>
+&nbsp;&nbsp;&nbsp; puts "\n\n"<br>
+&nbsp;&nbsp;&nbsp; puts item.elements['title']<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; txt =&nbsp; item.elements['description'].text<br>
+&nbsp;&nbsp;&nbsp; puts txt.sub(/\&lt;br.+/m,'')<br>
+<br>
+&nbsp;&nbsp;&nbsp; puts item.elements['pubDate'].text<br>
+end<br>
+<br>
+</code></span><code><br>
+</code><span style="background-color: Yellow;">PART A: </span><br>
+In this task you are being asked to read through this Ruby program and 
+figure out how it works. You will notice that the line responsible for 
+carrying out Steps 1-3 have already been labelled in the Ruby program. 
+Your task is to add the comments to identify for all other steps the 
+specific lines of this program that does this work. Please return the 
+annotate source code in your drop box.<br>
+<br>
+<br>
+<span style="background-color: Yellow;">PART B:</span><br>
+In this task you are being asked to create a version of this program 
+that will print only the news items that contain references to President
+ Obama in either the title or the description.&nbsp; Please return a 
+copy of the output of this revised program and a copy of its source code
+ in your drop box.<br>
+<br></div>
+																									        	<script type="text/javascript" language="JavaScript">
+
+function saveChanges(formName, textAreaId) {
+	var _textArea = document.getElementById(textAreaId);
+	if (_textArea != null) {
+		if (typeof FCKeditorAPI != "undefined") {
+			var editor = FCKeditorAPI.GetInstance(textAreaId);
+			document[formName].savedText.value = editor.GetXHTML(false);
+		}
+	}
+}
+
+iframeId = 'Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9';
+
+</script>
+<form name="form" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post">
+	<input name="sakai_action" value="" type="hidden">
+	<input name="providerId" value="" type="hidden">
+	<input name="criteria" value="" type="hidden">
+	<input name="savedText" value="" type="hidden">
+					</form>
+				<hr class="itemSeparator">
+						<h3>Submission</h3> 
+		
+
+
+					<form name="addSubmissionForm" id="addSubmissionForm" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post" onsubmit="return true;" enctype="multipart/form-data">
+		<input name="eventSubmit_doRead_add_submission_form" value="x" type="hidden">
+		<input name="option" id="option" value="cancel" type="hidden">
+		<input name="currentAttachment" value="" type="hidden">
+		<input name="assignmentId" value="/assignment/a/SP09-SB-CSCI-A201-27137/d8dbf577-aecb-48be-b72b-404b44a7d6cd" type="hidden">
+																															No attachments yet
+																<p class="act">
+				<input name="cancel" accesskey="x" id="cancel" value="Done" onclick="document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value='cancel'; document.addSubmissionForm.submit(); return false;" type="button">
+			</p>
+			</form>
+	</div>
+
+</body></html>

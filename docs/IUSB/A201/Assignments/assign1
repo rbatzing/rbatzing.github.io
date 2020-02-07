@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>Assignments</title>
+    <link href="/library/skin/tool_base.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/library/skin/oncourse/tool.css" type="text/css" rel="stylesheet" media="all" />
+<script type="text/javascript" language="JavaScript" src="/library/js/headscripts.js"></script>
+	
+    
+    		<!-- vm/editor/FCKeditor/sakai_header.vm -->
+	<script type="text/javascript" src="/library/editor/FCKeditor/fckeditor.js"></script>
+    
+  </head>
+  <body  onload="setMainFrameHeight('Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9');setFocus(focus_path);"  >
+<link href="/sakai-assignment-tool/css/assignment.css" type="text/css" rel="stylesheet" media="all" />
+<script type="text/javascript" src="/library/js/jquery.js"></script>
+<script type="text/javascript"  src="/sakai-assignment-tool/js/assignments.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        setupToggleAreas('toggleAnchor', 'toggledContent', false, 'fast');
+    });
+</script>
+<div class="portletBody" xmlns:wairole="http://www.w3.org/2005/01/wai-rdf/GUIRoleTaxonomy#"  xmlns:aaa="http://www.w3.org/2005/07/aaa">
+						<h3>
+	Assignment 1
+					</h3>
+
+					<table class="itemSummary" summary="The grading detail of assignment submission">
+				<tr>
+					<th>
+						Title
+					</th>
+					<td valign="top">
+						Assignment 1
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Student
+				 </th>
+					<td>
+																					Robert Batzinger<br />
+																		</td>
+				</tr>
+																			<tr>	
+							<th>
+								Grade Scale
+							</th>
+							<td>
+								Ungraded
+															</td>
+						</tr>
+																
+			</table>
+				<h4>
+			Instructions
+		</h4>				
+							
+					<div class="textPanel">Assignment 1. Designing classes to solve problems.<br/>
+<br/>
+Instructions:<br/>
+<br/>
+Read through the following problem descriptions and use UMLet to design the classes needed to address the issues raised. In your diagram, depict all attributes and methods as well as any relationships or reference that would be needed between the various classes you have. Remember you are only designing the composition and structure of the classes of the objects in these problem domains. I am not expecting you to do any Ruby programming at this point of time.<br/>
+<br/>
+You will need to develop a class inheritance diagram and a class decomposition diagram for each of these problems. Please export your diagrams as PDF files that you submit to your drop box for grading.<br/>
+<br/>
+<br/>
+Problem 1. A baby sitter's helper<br/>
+<br/>
+Bill, a computer science geek,&nbsp; has been hired by his brother's wife to watch over their 3 children (Mary aged 5, George aged 3, and Peter aged 1) while they go away on an overnight trip to Upper Sandusky. Mary only eats potatoes, peas and ham and she can watch 2 hours of television but should be put to bed at 8:45pm. She is not permitted to eat in front of the TV. George loves eating french fries and a hamburger&nbsp; while watching television with his sister. He should go to bed at 8:00PM. Bill should wake him about 10:30 to send him to the bathroom so he does not wet his bed. Peter only eats canned baby food and just loves spinach and turkey. He normally eats at 5:00PM and after eating he will play for a half an hour then fall asleep for about 3 hours. Bill will need to change his diapers when he wakes up and after you clean him up, give him a bottle of formula. At about midnight, Bill will need to change his diapers. Normally he will not wake up and will sleep soundly until 6AM when Bill will need to change him and given him a bottle of formula. George will wake up about&nbsp; 7:30 and want pancakes for breakfast. Bill should wake Mary up at 9:00 and she normally eats waffles.<br/>
+<br/>
+Bill wants to write an application that tracks the timing of all the tasks he has to do and be able to find out what he has to do next and list any task that is overdue. He also wants to be able to check on any one of the children and see what tasks he has completed and determine what he is supposed to do for the child next.<br/>
+<br/>
+For extra credit, expand the model to allow Bill to store the URL of how-to sites on the Internet to help him with tasks he is unfamilar with (such as heating formula or changing diapers). He will need to have a way to activte the link within a web browser.<br/>
+<br/>
+Problem 2. Tour bus<br/>
+<br/>
+You run a small bus company that provides transportation to guided tours. For each of these tours, your affliate company run by your sister provides the guide and a list of people to be picked up at their respective hotels. The tour has an itinerary of 8 places. There are often optional legs to the tour that individuals can elect to join while the remainder stay at their current location. Your responsibility is to provide transportation and to ensure that you do not loose any one in the process. You want to create an application that will allow you to track who joins the tour and the various optional segments. From this, you should be able to develop a list of who is on the bus at each stop of the tour. To make things easier for you, your sister has created a cool badge that all participants wear so that you can identify people by name or badge number. However, people change their minds often and you program needs to be able to enter and annotate last minute cancellations of tours or optional segments.<br/>
+<br/>
+Problem 3. Tetris game:<br/>
+<br/>
+I would like you to come with the up object design that would be needed for creating a program in which you could play Tetris. For those not familar with the game, here is a brief summary from Wikipedia. (Beware of adding too much information to your object model of the game.):<br/>
+<br/>
+<i><b>Tetris</b></i> (<a  href="http://en.wikipedia.org/wiki/Russian_language"    target="_blank">Russian</a>: Тетрис) is a <a  href="http://en.wikipedia.org/wiki/Puzzle_video_game"    target="_blank">puzzle video game</a> originally des<a  href="http://en.wikipedia.org/wiki/Dorodnicyn_Computing_Centre"    target="_blank"><img align="right"  alt=""  src="http://s3.amazonaws.com/shoes_code/public/uploads/361/Picture_3.png" /></a>igned and programmed by <a  href="http://en.wikipedia.org/wiki/Alexey_Pajitnov"    target="_blank">Alexey Pajitnov</a> in June 1985, while working for the <a  href="http://en.wikipedia.org/wiki/Dorodnicyn_Computing_Centre"    target="_blank">Dorodnicyn Computing Ce</a><a  href="http://en.wikipedia.org/wiki/Dorodnicyn_Computing_Centre"    target="_blank">ntre</a> of the <a  href="http://en.wikipedia.org/wiki/Russian_Academy_of_Sciences"    target="_blank">Academy of Science of the USSR</a> in <a  href="http://en.wikipedia.org/wiki/Moscow"    target="_blank">Moscow</a>. He derived its name from the Greek numerical prefix &quot;<a  href="http://en.wikipedia.org/wiki/Tetra-"    target="_blank">tetra-</a>&quot;, as all of the game's pieces (known as <a  href="http://en.wikipedia.org/wiki/Tetrominoes"    target="_blank">Tetrominoes</a>) contain four segments, and <a  href="http://en.wikipedia.org/wiki/Tennis"    target="_blank">te</a><a  href="http://en.wikipedia.org/wiki/Tennis"    target="_blank">nnis</a>, Pajitnov's favorite sport.<br/>
+<br/>
+A <a  href="http://en.wikipedia.org/wiki/Pseudorandom_number_generator"    target="_blank">pseudorandom</a> sequence of <a  href="http://en.wikipedia.org/wiki/Tetromino"    target="_blank">tetrominoes</a> (sometimes called &quot;tetrads&quot; in older versions)&mdash;shapes composed of four square blocks each&mdash;fall down the playing field. The object of the game is to manipulate these tetrominoes, by moving each one sideways and rotating it by 90 degree units, with the aim of creating a horizontal line of blocks without gaps. When such a line is created, it disappears, and all rows containing blocks above the deleted line will fall one level.&nbsp;   As the game progresses, the tetrominoes fall faster, and the game ends when the stack of tetrominoes reaches the top of the playing field and no new tetrominoes are able to enter. The game score is calculated by adding the sum of all tiles deleted with the disappearance of completed lines,&nbsp; to half the number of colored tiles left on the screen. The user should be able to view the game rate (in bricks added per min), the current game score and the shape of the next piece to fall.<br/>
+<br/>
+For more information, please refer to http://en.wikipedia.org/wiki/Tetris<br/>
+<br/></div>
+								
+																				    	    	<script type="text/javascript" language="JavaScript">
+
+function saveChanges(formName, textAreaId) {
+	var _textArea = document.getElementById(textAreaId);
+	if (_textArea != null) {
+		if (typeof FCKeditorAPI != "undefined") {
+			var editor = FCKeditorAPI.GetInstance(textAreaId);
+			document[formName].savedText.value = editor.GetXHTML(false);
+		}
+	}
+}
+
+iframeId = 'Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9';
+
+</script>
+<form name="form" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post">
+	<input type="hidden" name="sakai_action" value=""/>
+	<input type="hidden" name="providerId" value=""/>
+	<input type="hidden" name="criteria" value=""/>
+	<input type="hidden" name="savedText" value=""/>
+					</form>
+						<hr class="itemSeparator" />
+																																		<form action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post" >
+			<div class="act">
+				<input type="submit" accesskey="x" name="eventSubmit_doCancel_view_grade" value="Back to list" accesskey="x" class="active TB_hideControl"/>
+			</div>
+		</form>
+	</div>
+	
+
+							
+				
+					
+	<script type="text/javascript">
+		<!--
+			function display_item(id) {
+				var item = document.getElementById(id);
+				if(item.style.display == 'none')
+				item.style.display = 'block';
+				else
+				item.style.display = 'none';
+			}
+		//-->
+	</script>
+</body></html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Assignments</title>
+    <link href="SP09-SB-CSCI-A201-27137_data/tool_base.css" type="text/css" rel="stylesheet" media="all">
+<link href="SP09-SB-CSCI-A201-27137_data/tool.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" language="JavaScript" src="assign3_files/headscripts.js"></script>
+	
+    
+    		<!-- vm/editor/FCKeditor/sakai_header.vm -->
+	<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/fckeditor.js"></script>
+    
+  </head>
+  <body onload="setMainFrameHeight('Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9');setFocus(focus_path);">
+<script type="text/javascript" src="assign3_files/jquery.js"></script>
+<link href="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignment.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignments.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    setupToggleAreas('toggleAnchor', 'toggledContent', false, 'fast');
+    $('#submissionFileCount').val(1);
+    $('#addMoreAttachmentControls').click(function(e){
+        e.preventDefault();
+        if ($('#submissionFileCount').val() < 5) {
+            var $input = $('#clonableUpload').clone().removeAttr('id').addClass('cloned').appendTo('#clonedHolder').children('input');
+            $input.val('');
+            var $count = $('#submissionFileCount').val();
+            var $nameCount = "upload"+$count;
+            $input.attr("name", $nameCount);
+            $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) + 1);
+            if ($('#submissionFileCount').val() == 5) {
+                $('#addMoreAttachmentControls').hide();
+                $('#addMoreAttachmentControlsInactive').show();
+            }
+        }
+        $('.cloned a').show();
+        resizeFrame('grow');
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) - 1);
+    if ($('#submissionFileCount').val() < 5) {
+        $('#addMoreAttachmentControls').show();
+        $('#addMoreAttachmentControlsInactive').hide();
+    }
+};
+
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm && theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm && theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+</script>
+
+
+<div class="portletBody">
+								<div class="alertMessage">The close date of the assignment has passed. You can no longer submit an answer.</div><div class="clear"></div>
+				<table class="itemSummary" summary="The assignment info">
+				<tbody><tr>
+					<th>
+						Title
+					</th>
+					<td>
+						Assignment 3:
+																	</td>
+				</tr>
+				<tr>
+					<th>
+						Due
+					</th>
+					<td>
+						Feb 16, 2009 5:00 pm
+					</td>
+				</tr>
+																					<tr>
+					<th>
+						Status
+					</th>
+					<td>
+																					In progress
+																		</td>
+				</tr>
+																			<tr>	
+							<th>
+								Grade Scale
+							</th>
+							<td>
+								Ungraded
+															</td>
+						</tr>
+																						<tr>
+						<th>
+								Modified by instructor
+						</th>
+						<td>
+							Feb 9, 2009 11:40 pm
+						</td>
+					</tr>
+											</tbody></table>
+		<h4>
+			Instructions
+		</h4>
+		
+					<div class="textPanel">In this assignment, I would like to ask you 
+to submit a design for each of these games. Please submit the UML class 
+inheritance and decomposition diagrams that describe the following 
+games.<br>
+<h3 style="color: Red;">High Low</h3>
+In this game, the computer selects a random number. The user will be 
+asked to guess a number. If the guess is too high, the computer is to 
+respond with the message "TOO HIGH" and if the guess is too low, the 
+computer is to respond with the message "TOO LOW". In both cases, the 
+user is invited to guess again and again until the guess is equal to the
+ number. Once this happens, the computer is to respond with the message 
+"YOU GUESSED IT" and display the number of tries the user took to find 
+the correct number. After this, the computer is to invite the user to 
+play another game. If the user responds with a "Y" the computer will 
+guess another number and the game starts over again. Otherwise the 
+computer will end the program.<br>
+<h3 style="color: Red;">&nbsp;</h3>
+<h3 style="color: Red;">Tic Tac Toe</h3>
+In this game, the computer starts by drawing a game board consisting of a
+ 3x3 matrix of squares. The user is 'X' and goes first to choose and 
+mark a square in the matrix. The computer will then choose a suitable 
+square and mark it with an 'O'. This goes back and forth with the user 
+and the computer taking turns to choose squares on the game board. If 
+either side is able to mark 3 squares in a line either down a column or 
+across a row or down a diagonal, that sie wins the game. If all the 
+squares are marked without, forming 3 of a kind in a straight line, the 
+game is declared a tie. The computer will need to announce the outcome 
+of the game and invite the user to play again. If the user chooses to 
+play a new game, the computer resets the game board and a new game 
+begins else the computer will end the program.<br>
+<br>
+Please submit your class diagrams in your drop box for this course. 
+Remember that these are only a design of your program and not the actual
+ Ruby code. Do be aware that these designs will be used a subsequent 
+assignment.<br>
+<br>
+<br>
+<br>
+<br>
+<br></div>
+																									        	<script type="text/javascript" language="JavaScript">
+
+function saveChanges(formName, textAreaId) {
+	var _textArea = document.getElementById(textAreaId);
+	if (_textArea != null) {
+		if (typeof FCKeditorAPI != "undefined") {
+			var editor = FCKeditorAPI.GetInstance(textAreaId);
+			document[formName].savedText.value = editor.GetXHTML(false);
+		}
+	}
+}
+
+iframeId = 'Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9';
+
+</script>
+<form name="form" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post">
+	<input name="sakai_action" value="" type="hidden">
+	<input name="providerId" value="" type="hidden">
+	<input name="criteria" value="" type="hidden">
+	<input name="savedText" value="" type="hidden">
+					</form>
+				<hr class="itemSeparator">
+						<h3>Submission</h3> 
+		
+
+
+					<form name="addSubmissionForm" id="addSubmissionForm" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post" onsubmit="return true;" enctype="multipart/form-data">
+		<input name="eventSubmit_doRead_add_submission_form" value="x" type="hidden">
+		<input name="option" id="option" value="cancel" type="hidden">
+		<input name="currentAttachment" value="" type="hidden">
+		<input name="assignmentId" value="/assignment/a/SP09-SB-CSCI-A201-27137/307803a9-8e60-4af2-b2a0-7926a47c37e5" type="hidden">
+																															No attachments yet
+																<p class="act">
+				<input name="cancel" accesskey="x" id="cancel" value="Done" onclick="document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value='cancel'; document.addSubmissionForm.submit(); return false;" type="button">
+			</p>
+			</form>
+	</div>
+
+</body></html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Assignments</title>
+    <link href="SP09-SB-CSCI-A201-27137_data/tool_base.css" type="text/css" rel="stylesheet" media="all">
+<link href="SP09-SB-CSCI-A201-27137_data/tool.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" language="JavaScript" src="extraassign_files/headscripts.js"></script>
+	
+    
+    		<!-- vm/editor/FCKeditor/sakai_header.vm -->
+	<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/fckeditor.js"></script>
+    
+  </head>
+  <body onload="setMainFrameHeight('Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9');setFocus(focus_path);">
+<script type="text/javascript" src="extraassign_files/jquery.js"></script>
+<link href="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignment.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignments.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    setupToggleAreas('toggleAnchor', 'toggledContent', false, 'fast');
+    $('#submissionFileCount').val(1);
+    $('#addMoreAttachmentControls').click(function(e){
+        e.preventDefault();
+        if ($('#submissionFileCount').val() < 5) {
+            var $input = $('#clonableUpload').clone().removeAttr('id').addClass('cloned').appendTo('#clonedHolder').children('input');
+            $input.val('');
+            var $count = $('#submissionFileCount').val();
+            var $nameCount = "upload"+$count;
+            $input.attr("name", $nameCount);
+            $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) + 1);
+            if ($('#submissionFileCount').val() == 5) {
+                $('#addMoreAttachmentControls').hide();
+                $('#addMoreAttachmentControlsInactive').show();
+            }
+        }
+        $('.cloned a').show();
+        resizeFrame('grow');
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) - 1);
+    if ($('#submissionFileCount').val() < 5) {
+        $('#addMoreAttachmentControls').show();
+        $('#addMoreAttachmentControlsInactive').hide();
+    }
+};
+
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm && theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm && theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+</script>
+
+
+<div class="portletBody">
+					<div class="alertMessage">The close date of the assignment has passed. You can no longer submit an answer.</div><div class="clear"></div>
+				<table class="itemSummary" summary="The assignment info">
+				<tbody><tr>
+					<th>
+						Title
+					</th>
+					<td>
+						Extra credit assignment
+																	</td>
+				</tr>
+				<tr>
+					<th>
+						Due
+					</th>
+					<td>
+						May 6, 2009 5:00 pm
+					</td>
+				</tr>
+																					<tr>
+					<th>
+						Status
+					</th>
+					<td>
+													Not Started
+											</td>
+				</tr>
+																			<tr>	
+							<th>
+								Grade Scale
+							</th>
+							<td>
+								Ungraded
+															</td>
+						</tr>
+																								</tbody></table>
+		<h4>
+			Instructions
+		</h4>
+		
+					<div class="textPanel">This assignment is optional and is available for extra credit. It focuses on the use of Shoes in object-oriented fashion.<br>
+<br>
+In the Shoes example subdirectory there is a file called 
+simple-bounce.rb that implements an animated bouncing ball. A simplified
+ version of this is listed below:<br>
+<code><br>
+<span style="background-color: Yellow;">xspeed, yspeed = 8.4, 6.6<br>
+xdir, ydir = 1, 1<br>
+<br>
+Shoes.app&nbsp; :width=&gt;300,:height=&gt;300, :resizable=&gt;false do<br>
+&nbsp; background "#DFA".."#FDA"<br>
+&nbsp; border black, :strokewidth =&gt; 6<br>
+<br>
+&nbsp; @icon = image "shoes.png", :left =&gt; 100, :top =&gt; 100 <br>
+<br>
+&nbsp; x, y = self.width / 2, self.height / 2<br>
+&nbsp; size = @icon.size<br>
+&nbsp; animate(30) do<br>
+&nbsp;&nbsp;&nbsp; x += xspeed * xdir<br>
+&nbsp;&nbsp;&nbsp; y += yspeed * ydir<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; xdir *= -1 if x &gt; self.width - size[0] or x &lt; 0<br>
+&nbsp;&nbsp;&nbsp; ydir *= -1 if y &gt; self.height - size[1] or y &lt; 0<br>
+<br>
+&nbsp;&nbsp;&nbsp; @icon.move x.to_i, y.to_i</span></code><br>
+<code><span style="background-color: Yellow;">&nbsp; end</span></code>
+<p><code><span style="background-color: Yellow;">end</span></code><code><br>
+<br>
+</code><img alt="shoes icon" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/shoes.png" align="right"></p>
+<p>The bouncing ball is really the icon for Shoes.</p>
+Now George took one look at this code and was really upset because it 
+did not use classes and lumped all the code into one big code fragment. 
+So he came up with the following class library:  <br>
+<br>
+<code><span style="background-color: Yellow;">class Ball<br>
+&nbsp;&nbsp; attr_accessor :icon, :xdir, :x , :y&nbsp; <br>
+<br>
+&nbsp; def initialize(x,y,image)<br>
+&nbsp;&nbsp;&nbsp;&nbsp; @xdir = 2 + rand(10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp; @icon = image<br>
+&nbsp;&nbsp;&nbsp;&nbsp; @max_x, @max_y = x,y<br>
+&nbsp;&nbsp;&nbsp;&nbsp; @y = @icon.top = @max_y/2<br>
+&nbsp;&nbsp;&nbsp;&nbsp; @x = @icon.left = @max_x/2<br>
+&nbsp; end<br>
+&nbsp; <br>
+&nbsp; def incr<br>
+&nbsp;&nbsp;&nbsp; @x += @xdir<br>
+&nbsp;&nbsp;&nbsp; @xdir = -1 * @xdir.abs if (@x + @icon.width &gt; @max_x)<br>
+&nbsp;&nbsp;&nbsp; @xdir = @xdir.abs if (@x &lt; 0)<br>
+&nbsp;&nbsp;&nbsp; @icon.left = @x.to_i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp; end<br>
+&nbsp; <br>
+&nbsp; def faster<br>
+&nbsp;&nbsp;&nbsp; @xdir *= 1.1<br>
+&nbsp; end<br>
+&nbsp; <br>
+end<br>
+</span></code><br>
+He was so please with himself because the main program&nbsp; reduced to the following code:<br>
+<span style="background-color: Yellow;"><code><br>
+WIDTH = 300<br>
+HEIGHT = 300<br>
+<br>
+Shoes.app :width=&gt; WIDTH,:height=&gt; HEIGHT, :resizable=&gt;false do<br>
+&nbsp;&nbsp; background "#DFA".."#FDA"<br>
+&nbsp; border black, :strokewidth =&gt; 6<br>
+&nbsp; <br>
+&nbsp; @ball = Ball.new(self.width,self.height,(image "shoes.png"))<br>
+<br>
+&nbsp; button "faster" do<br>
+&nbsp;&nbsp;&nbsp;&nbsp; @ball.faster<br>
+&nbsp; end<br>
+&nbsp; <br>
+&nbsp; animate(30) do |i|<br>
+&nbsp;&nbsp;&nbsp; @ball.incr<br>
+&nbsp; end<br>
+end</code></span><br>
+<br>
+At this point, George was running out of time and came by to ask for 
+help. Here are the things that are needed. Credit will be given for the 
+tasks you are able to complete. (The full amount of credit for 
+completing all tasks equals 1.5 home assignments.).<br>
+<h3 style="color: Red;">Task 1: Vertical movement.</h3>
+The class library worked well enough in the horizontal direction but was
+ lacking control in the vertical dimension. You are asked to add to the 
+class library so that it supports the vertical. The faster button should
+ also speed up&nbsp; the vertical movement by the same proportion.<br>
+<h3 style="color: Red;">Task 2: Slow button</h3>
+Add a second button for slowing down the movement of the ball (Both in the vertical and in the horizontal directions).<br>
+<h3 style="color: Red;">Task 3: Quit button</h3>
+Add a thrid button that exits the program. (Using the exit() method)<br>
+<h3 style="color: Red;">Task 4: Add a second ball</h3>
+Add a second ball that bounces off the wall but passes throught the 
+first ball. The two balls should&nbsp; travel at different speeds. The 
+faster and slower buttons should effect the speeds of both balls<br>
+<h3 style="color: Red;">Task 5: Add a class method Ball::collosion</h3>
+Add a class method that will check if any two balls are close enough to 
+collide and then adjusts the speed and direction of both to reflect the 
+collosion. You do not have to implement the model for a fully elastic 
+collosion. Instead, just implement a change of direction as if both 
+balls had hit a wall at the moment of impact. This method should be 
+called within the animation block to correct for the effects of a 
+collosion.<br>
+<h3 style="color: Red;">Task 6: Add&nbsp; a Third Ball</h3>
+Increase the height and width of the application to 480 by 640 and add a
+ third ball to the system. This ball should also respond to changes in 
+speed and with collosions with any of the other two balls.<br>
+<h2>What to submit:</h2>
+Please upload your updated class definition and program files to your 
+drop Box subdirectory. Submissions up to 11:55PM on 6 May 2009 will be 
+accepted.<br>
+<br>
+<br>
+<br>
+<br>
+<br></div>
+																									        	<script type="text/javascript" language="JavaScript">
+
+function saveChanges(formName, textAreaId) {
+	var _textArea = document.getElementById(textAreaId);
+	if (_textArea != null) {
+		if (typeof FCKeditorAPI != "undefined") {
+			var editor = FCKeditorAPI.GetInstance(textAreaId);
+			document[formName].savedText.value = editor.GetXHTML(false);
+		}
+	}
+}
+
+iframeId = 'Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9';
+
+</script>
+<form name="form" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post">
+	<input name="sakai_action" value="" type="hidden">
+	<input name="providerId" value="" type="hidden">
+	<input name="criteria" value="" type="hidden">
+	<input name="savedText" value="" type="hidden">
+					</form>
+				<hr class="itemSeparator">
+						<h3>Submission</h3> 
+		
+
+
+					<form name="addSubmissionForm" id="addSubmissionForm" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post" onsubmit="return true;" enctype="multipart/form-data">
+		<input name="eventSubmit_doRead_add_submission_form" value="x" type="hidden">
+		<input name="option" id="option" value="cancel" type="hidden">
+		<input name="currentAttachment" value="" type="hidden">
+		<input name="assignmentId" value="/assignment/a/SP09-SB-CSCI-A201-27137/dac3a9dd-6c4e-4b45-b230-0fe1a560cf94" type="hidden">
+																															No attachments yet
+																<p class="act">
+				<input name="cancel" accesskey="x" id="cancel" value="Done" onclick="document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value='cancel'; document.addSubmissionForm.submit(); return false;" type="button">
+			</p>
+			</form>
+	</div>
+
+</body></html>

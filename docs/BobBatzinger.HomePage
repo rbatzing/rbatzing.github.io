@@ -1,0 +1,23 @@
+version=pmwiki-2.1.26 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12
+author=Bob
+csum=
+ctime=1205165401
+host=76.208.56.255
+name=BobBatzinger.HomePage
+rev=4
+targets=BobBatzinger.Highlights,BobBatzinger.CurriculumVitae,BobBatzinger.WorkExperience,BobBatzinger.ProfessionalCommunications,BobBatzinger.PersonalInformation
+text=%25rframe%25Attach:bob2.jpg%0a! Robert P. Batzinger%0a%0a*[[BobBatzinger/Highlights]]%0a** Summary of Professional Career%0a** Professional Standards%0a** Professional Goals%0a%0a*[[BobBatzinger/CurriculumVitae]]%0a** Education%0a** Employment Record%0a** Committees Served%0a** Societies%0a** Awards and Honors%0a%0a*[[BobBatzinger/Work Experience]]%0a** Web engineering%0a** Electronic Communciations%0a** Typesetting and Text Processing%0a** Computer Support in Asian languages%0a** Biomedical Research%0a%0a*[[BobBatzinger/ProfessionalCommunications]]%0a** Publications%0a** Abstracts of Poster Sessions%0a** Public Lectures%0a** UBS Mini-Workshop Topics%0a%0a*[[BobBatzinger/PersonalInformation]]%0a** General Information%0a** Contact Information%0a
+time=1205198796
+author:1205198796=Bob
+diff:1205198796:1205198665:=1d0%0a%3c %25rframe%25Attach:bob2.jpg%0a3c2%0a%3c %0a---%0a> %25rframe%25Attach:bob2.jpg%0a
+host:1205198796=76.208.56.255
+author:1205198665=Bob
+diff:1205198665:1205165413:=2c2%0a%3c %25rframe%25Attach:bob2.jpg%0a---%0a> %0a
+host:1205198665=76.208.56.255
+author:1205165413=Bob
+diff:1205165413:1205165401:=
+host:1205165413=149.161.75.2
+author:1205165401=Bob
+diff:1205165401:1205165401:=1,30d0%0a%3c ! Robert P. Batzinger%0a%3c %0a%3c *[[BobBatzinger/Highlights]]%0a%3c ** Summary of Professional Career%0a%3c ** Professional Standards%0a%3c ** Professional Goals%0a%3c %0a%3c *[[BobBatzinger/CurriculumVitae]]%0a%3c ** Education%0a%3c ** Employment Record%0a%3c ** Committees Served%0a%3c ** Societies%0a%3c ** Awards and Honors%0a%3c %0a%3c *[[BobBatzinger/Work Experience]]%0a%3c ** Web engineering%0a%3c ** Electronic Communciations%0a%3c ** Typesetting and Text Processing%0a%3c ** Computer Support in Asian languages%0a%3c ** Biomedical Research%0a%3c %0a%3c *[[BobBatzinger/ProfessionalCommunications]]%0a%3c ** Publications%0a%3c ** Abstracts of Poster Sessions%0a%3c ** Public Lectures%0a%3c ** UBS Mini-Workshop Topics%0a%3c %0a%3c *[[BobBatzinger/PersonalInformation]]%0a%3c ** General Information%0a%3c ** Contact Information%0a
+host:1205165401=149.161.75.2

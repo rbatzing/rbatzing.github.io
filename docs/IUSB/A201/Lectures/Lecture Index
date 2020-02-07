@@ -1,0 +1,49 @@
+<img align="middle" alt="" src="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/ruby2.gif" />
+<h1>Credits</h1>
+<p style="text-align: left;"><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/titlecredits.swf">Credits and Grant Acknowledgements</a></p>
+<table border="1" align="center" width="95%">
+    <tbody>
+        <tr>
+            <td valign="top">
+            <h1>Uploaded lectures</h1>
+            <ol>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l1/lec1.html">Object-oriented design: Part 1 Overview</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l2/lec2.html">Object-oriented design: Part 2 More about Classes<br />
+                </a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l3/lec3.html">Object-oriented design: Part 3 An example</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l4/lec4.html">Class components in Ruby: Part 1</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l5/lec5.html">Class components in Ruby: Part 2 shortcut methods; predicates</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l6/lec6.html">Variables in Ruby</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/a1/assign1.html">Assignment 1 Explanation</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l7/07Conditional.html">Conditionals: Part 1</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l8/08conditionals.html">Conditionals: Part 2</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l10/arrays.html">Arrays, Hashes and Strings: Part 1<br />
+                </a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l9/arrays1.html">Arrays, Hashes and Strings: Part 2</a><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l10/arrays.html"><br />
+                </a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l11/l11.html">Programming loops and iterations<br />
+                </a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l12/l12.html">Creating programs from class definitions<br />
+                </a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l12b/12blibrary.html">Using built-in classes</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l13/lec13io.html">Input and output<br />
+                </a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l14/Untitled.html">String methods</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/lect16/lec16.html">Number methods<br />
+                </a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l17/l17.html">Regular expressions</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l18/lect18.html">Programming techniques</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/lect19/lect19.html">Data exploring with Ruby</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l20/lect20.html">GUI Programming with Shoes</a></li>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/l21/lect21.html">RubyGEMS and Rake</a></li>
+            </ol>
+            </td>
+            <td valign="top">
+            <h1>How-To's</h1>
+            <ul>
+                <li><a href="https://oncourse.iu.edu/access/content/group/SP09-SB-CSCI-A201-27137/Lectures/lectures/h1/installruby.html">Installing and using standard Ruby</a></li>
+            </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

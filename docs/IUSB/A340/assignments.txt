@@ -1,0 +1,228 @@
+Assignment Instructions
+
+A340 Assignment 1: Getting Started
+Purpose:
+
+    to install XAMPPlite, test it and become familar with using it with PHP
+
+SETUP YOUR COPY OF XAMPPlite
+
+        Download a copy of the Zip version of XAMPPlite from http://www.xampp.org.
+        Copy the contents of this Zip folder to your flash drive
+        Execute the XAMPP-PORTCHECK and close any applications that are using the required ports.
+        Adjust the drive letter by running SETUP_XAMPP
+        Start up the XAMPP service by clicking on XAMPP_START
+        Open a browser and point it to http://localhost
+        To end the session, close your browser and click on XAMPP_STOP.
+        Remember to unmount the USB device before logging out or shutting down.
+
+EXPLORING THE XAMPPlite configuration:
+
+1. Locate the httpd.conf file and check its settings for the following:
+
+
+       ServerRoot:
+
+       Listen:
+
+       ServerName:
+
+       DocumentRoot:
+
+       ScriptAlias of cgi-bin
+
+       DefaultType
+
+       Options associated with the following directories:
+
+                   root of the hard drive
+
+                   DocumentRoot
+
+                   cgi-bin
+
+EXPERIMENTING WITH PHP
+
+1. Create a text in your DocumentRoot with the name: test.php
+
+2. Save the following lines in that file:
+
+    <?php
+           $nextWeek = time() + (7 * 24 * 60 * 60);
+                       // 7 days; 24 hours; 60 mins; 60secs
+
+           echo '<p>Now:       '. date('Y-m-d H:i:s') ."</p>\n";
+           echo '<p>Next Week: '. date('Y-m-d', $nextWeek) ."</p>\n";
+
+    ?>
+
+3. View this program using your web browser to look at this location and save the contents to a text file:
+
+
+             http://localhost/test.php
+
+4. View the source code of this program by using your web browser to look at this location and save the contents to a text file.
+
+5. View the program as a file using the relative directory address and save the contents to a text file:
+
+
+             f:\xampplite\htdocs\test.php
+
+6. View the access log for Apache and copy the last twenty entries to a text file
+What to submit
+
+    Combine the contents of the 3 text files you have saved in to a single file and submit it to the Oncourse Drop-box
+
+Extra credit: You are welcome to attempt any or all of the following:
+1. Place the PHP file into the appropriate directory for HTTPS communications and view it with your browser. Carefully review the browser rendering and the tail of the access log and describe the differences between using http and https to display PHP output.
+
+2. Alter the PHP program to format time in this format:
+    2:30PM on Wednesday, 6 January 2008
+ 
+
+ 
+
+Open Student view of the assignment "Assign 01: Installing everything" 
+
+----------------------------------
+
+Assignment Instructions
+In this exercise we want to produce a php file that will respond in accordance to the number of times the page has been visited. The general format of the output is given below.
+The first time
+Name: 	.............
+Password: 	.............
+Submit
+The second time and third time
+Name: 	Bob
+Password: 	bluegoose
+Submit
+Fourth and subsequent times
+Good morning, Bob
+Submit
+For this exercise, we will depend on the $GET system hash to return values for name, password and count of visits. The value of these parameters should be passed to the subsequent visit via the link associated with the word Submit. Therefore for all views of the file please use the following line for the Submit link:
+
+echo "<a href='$filename?name=$name&passwd=$passwd&count=$count'>Submit</a>";
+
+At the top of the file you will need to transfer the incoming values from the $GET system hash variables into simple variables: $name, $passwd and $count. You will also need to increment the visit counter called $count and save the name of the current file as a string in $filename to get this to work correctly.
+
+Open Student view of the assignment "Assign 02: Conditional" 
+
+------------------------------------
+
+Assignment Instructions
+
+This week we want to extend the web service from last week. This time we want to create a single file hw3.php that  uses forms and data validation to support the following dialogue. Stage One and Two forms will require data validation.
+First Stage:
+Name 	 
+Login 	 
+  	[Submit]
+Second Stage
+The program will use a Hash to look up the password for the user. The hash table should have at least 3 logins in it:   For example:  $login = array(bob'=>'bluegooose', 'bill'=>'loansharkie","george"=>"JungleCalls"). The login password needs to be checked against the password on record:  $login[$name] == $password
+If Stage One Failed
+If the name and user password do not match, the communication reverts back to Stage One with the name field filled in
+Name 	bob
+Password 	 
+  	<input type="submit" />
+If Stage One succeeded
+Send a form for capturing the current location and telephone for the employee.
+
+Welcome, bob!
+Please type your current phone number and zipcode
+Phone 	 
+Zip 	 
+  	 [Submit]
+Stage Three
+
+Use a hash table to look up the last the known telephone and zip for this sales person. If they match the values on file, skip to Stage 4 to ask for the request. Otherwise, confirm the new data before proceeding to Stage 4
+Confirm new location or telephone number
+Please confirm your current phone number and zipcode
+Phone 	574-520-5046
+Zip 	46635
+  	[Submit]
+Stage Four
+Invite the user to enter his request.
+Please enter your request
+Request: 	
+
+
+ 
+  	[Submit]
+Stage Five
+
+Invite the confirmation of the request made. If confirmed got to Stage Six . Otherwise go back to Stage four with the request preloaded into the editing box
+Please confirm your request
+Name: 	Bob
+Calling from: 	574-520-5046 in 46635
+Request: 	Sales have been brisk today. Sold 5 units. I urgently need 50 copies of the sales catalog by UPS to my hotel. Please ask George when the new model will be ready. Several are interested to buy it.
+[Edit] 	[Confirm]
+Stage Six
+Display a message acknowledging the receipt of the request.
+
+
+
+Your request has been forwarded to Mary's Blackberry.
+[logout]
+Stage Seven
+Display a message acknowledging that the user has logged out.
+Have a good day
+
+Open Student view of the assignment "Assign03: Forms" 
+
+---------------------------------------------------
+
+Assignment Instructions
+The final project for this course will involve the testing and provide both an oral and written report of one of the following open-source programs.
+
+    pmWiki - a wiki engine with many extensions
+    Drupal - content management system
+    Zencart - E-commerce
+    Moodle - Educational class management system
+    phpMyLibrary - library automation system
+    Joomla - content management
+    phpScheduleIT - online reservation system
+    OrangeHRM - Human Resource Management system
+    IAPR Commence - Conference and Meeting management system
+    Animal Shelter Manager - Tracking of animals held within an animal shelter
+
+
+The final report will need to cover the following 7 topics:
+
+    Background: Brief background of the program, the chief architect/designer and how the development was funded
+    Design: Description of the key features of this program and the services it was designed to provide
+    State diagram: a map of the various stages of activity between the client and the service
+    Program organization: Description of the components and the organization of the code in this program
+    Data structures: organization of data files and databases used by this program
+    Key code segments: Significant code segments that demonstrate how key features of the program works
+    Security: A discussion of mechanisms used to keep the system and data secure
+
+Students are invited to work either alone or in pairs on this final project which will become due on the last 2 days of the course.
+
+In this assignment, students are to choose a program that has not yet been is selected and to submit a note in the Chat Room as the name of the program chosen and whether the intention is to work alone or with another. Partners must also confirm that they will be willing to work together on the project.
+
+Students must report their intensions in the Chat by 11:59PM 13 Mar.
+
+Open Student view of the assignment "Assign 04: Choose a final project" 
+
+------------------------------------------------------
+
+Assignment Instructions
+Update the index.php
+Task 1.
+
+In the current version, the main services of your website are currently encapsulated as the body of the various segments of the  if .. elsif .. else .. chain. In this task I would like you to move the processing and the forms into individual subroutines. The web site should still continue to work and function as before.
+
+Task 2..
+
+Move all the subroutines to another file and have the index.php load this file into memory before executing the if ... elsif .. else chain.
+
+Task 3.
+
+Add a log file to will record all data sent to the system by appending the information to end of this file. Also add a button and service to the last page that will return the contents of the log file in a text block.
+
+Task 4
+
+Upload copies of the above 3 versions of index.php to your drop box.
+ 
+groups
+
+Open Student view of the assignment "Assign 5. Reading and writing to files"

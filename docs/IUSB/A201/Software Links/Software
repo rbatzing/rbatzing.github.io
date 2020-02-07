@@ -1,0 +1,10 @@
+<h3 style="color: Red;">Software used in this course</h3>
+The software selected for this course is free and available in Linux, Mac OSX and Windows XP versions. Please select and download the version that corresponds to your computer. For the convenience of students on campus, this software has been loaded into the computers in NS164. These computers are available for your use when the room is not being used by a class. (A schedule is posted on the door to this room).<br />
+<br />
+<ul>
+    <li><a href="http://www.netbeans.org/downloads/">Netbeans and JRuby</a>: An integrated development environment for a version of Ruby implemented in Java&nbsp;</li>
+    <li><a href="http://www.ruby-lang.org/en/downloads/">Ruby</a>: The official development version from Matz. Please use either version 1.8.6 or 1.8.7 Be sure to avoid 1.9 or 2.0 as they are unstable and have a different syntax</li>
+    <li><a href="http://shoooes.net/">Shoes</a>: a version of 1.8.6 Ruby that supports graphic and GUI</li>
+    <li><a href="http://www.umlet.com/changes.htm">UMLet</a>: a graphic editor of UML diagrams</li>
+    <li><a href="http://www.eltima.com/products/swf-movie-player/">SWF Player</a> Eltima SWF player that provides a slide bar for SWF that do not have them.</li>
+</ul>

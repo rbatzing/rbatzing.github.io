@@ -1,0 +1,14 @@
+version=pmwiki-2.1.26 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.7) Gecko/2009021906 Firefox/3.0.7
+author=Bob
+csum=
+ctime=1205166277
+host=149.161.75.5
+name=BobBatzinger.PersonalInformation
+rev=14
+targets=
+text=%25rfloat%25 Attach:family.jpg%0a! Robert Batzinger: Personal Information%0a%0a!! General Information%0a%0a* Born: 1953    %0a%0a* Marital status: Married Khajohn Srisuwan. Two daughters%0a%0a%0a* Church affiliation: %0a%0a** Sunday School Superintendent: Sonlight Fellowship Wesleyan Church, South Bend, IN%0a** Adjunct Member, Princeton Evangelical Presbyterian Church, Princeton, NY%0a** Member, True Way Presbyterian Church, Singapore%0a** Member, Thailand Fellowship in Singapore, Singapore%0a** Deacon, Faham Chinese Church, Chiang Mai, Thailand%0a** Member, Elim Conference Baptist, Madison, WI%0a** Member, Second Congregational Church, Baltimore, MD%0a%0a* Hobbies and past-time activity: Reading, Gardening, Music, Electronics%0a%0a!! Contact Information%0a%0a|| '''Address:''' ||Attach:iu.gif [[%3c%3c]]Dr. Robert Batzinger[[%3c%3c]]IUSB Informatics Lab `NS160C[[%3c%3c]]1700 Misahawaka Ave [[%3c%3c]]South Bend, IN 46634||Attach:arkfriendss.gif [[%3c%3c]]`ArkFriends Associates[[%3c%3c]] 841 S 32nd St[[%3c%3c]]South Bend, IN 46615||%0a||'''Fax (via e-Fax):''' ||(574) 520-4554 ||(415) 480-1990 ||%0a||'''Email:''' ||rbatzing Attach:at.gif iusb.edu ||bob Attach:at.gif arkfriends.net] ||%0a||'''Voice mail:''' ||(574) 520-5046 ||(415) 480-1990 ||%0a||'''Website:''' ||[[http://mypage.iusb.edu/~rbatzing|mypage.iusb.edu/~rbatzing]] ||[[http://www.arkfriends.org |www.arkfriends.org]] ||%0a%0a
+time=1236606577
+author:1236606577=Bob
+diff:1236606577:1205210269:=27c27%0a%3c ||'''Email:''' ||rbatzing Attach:at.gif iusb.edu ||bob Attach:at.gif arkfriends.net] ||%0a---%0a> ||'''Email:''' ||rbatzing at.gif iusb.edu ||bob at.gif arkfriends.net] ||%0a
+host:1236606577=149.161.75.5

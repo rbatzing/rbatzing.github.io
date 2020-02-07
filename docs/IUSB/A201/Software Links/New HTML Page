@@ -1,0 +1,51 @@
+<h3 style="color: Red;">Some Good Books on Ruby</h3>
+<table cellspacing="1" cellpadding="1" border="1" align="center" style="width: 545px; height: 522px;">
+    <tbody>
+        <tr>
+            <td><img alt="" style="width: 78px; height: 94px;" src="http://www.pragprog.com/images/covers/190x228/ruby.jpg?1184184147" /></td>
+            <td>
+            <p><b>Programming Ruby: The Pragmatic Programmers' Guide 2nd Ed</b><br />
+            Dave Thomas <br />
+            Pragmatic Bookshelf, ISBN 0-9745140-5-5</p>
+            This is the textbook for this course. The first edition has become the source of most of the online documentation for Ruby and it freely available. Students can use the first edition but I will be using Table of Contents References from the Second Edition. (The third edition and Ruby 1.9 are both not stable enough at this point of time to be used as a student textbook.)</td>
+        </tr>
+        <tr>
+            <td><img src="http://my.safaribooksonline.com/images/0768667208/0768667208_xs.jpg" alt="" /></td>
+            <td><b>The Ruby Way</b><br />
+            Hal Fulton<br />
+            Addison-Wesley ISBN 0-672-32884-4<br />
+            <br />
+            This is a popular indepth description of Ruby. Leading competitor to the Pickaxe Book.</td>
+        </tr>
+        <tr>
+            <td><img src="http://oreilly.com/catalog/covers/9780596516178_cat.gif" style="width: 83px; height: 108px;" alt="" /></td>
+            <td>
+            <p><b>The Ruby Programming Language</b><br />
+            David Flanagan and Yukihiro Matsumoto. <br />
+            O'Reilly ISBN 978-0-596-51617-8<br />
+            <br />
+            This is an advanced book providing a description of both 1.8.6 and 1.9 versions of Ruby.&nbsp; Co-authored by the designer and custodian of the Ruby language ('Matz' himself) this book provide indepth insight into the design and inner workings of Ruby. Not an easy book for Ruby newbies but a valuable text for the serious programmer.</p>
+            </td>
+        </tr>
+        <tr>
+            <td><img align="right" alt="book cover" style="width: 86px; height: 113px;" src="http://oreilly.com/catalog/covers/9780596529864_cat.gif" /></td>
+            <td>
+            <p><b>Learning Ruby: The Language that Powers Rails</b><br />
+            Michael Fitzgerald<br />
+            ISBN 10: 0-596-52986-4<br />
+            <br />
+            An easy read and quick overview</p>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="http://test.easyentertainment.co.uk/ProductImages/Books/New_180/97803215/9780321553850.jpg" style="width: 95px; height: 95px;" alt="" /></td>
+            <td>
+            <p><b>Ruby Visual QuickStart Guide</b><br />
+            Larry Ullman<br />
+            ISBN 10: 0-321-55385-3<br />
+            <br />
+            A cookbook of ideas and tasks implemented in Ruby</p>
+            </td>
+        </tr>
+    </tbody>
+</table>

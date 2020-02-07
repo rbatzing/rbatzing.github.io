@@ -1,0 +1,17 @@
+version=pmwiki-2.1.26 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12
+author=Bob
+csum=
+ctime=1205180941
+host=149.161.75.2
+name=BobBatzinger.TeachingExperience
+rev=2
+targets=
+text=! Robert Batzinger: Teaching Experience%0a%0a* 2007 Bio L391 Introduction to Biostatistics (Half Semester)%0a%0a* 2007 Info I400 Introduction to Bioinformatics (Half Semester)%0a%0a* 2006-Present CSCI A340 Introduction to Web Programming.%0a%0a* 1992-2003 Introduction to Perl Text Processing.%0a%0a* 1988-1994 Introduction to SNOBOL Text Processing.%0a%0a* 1982 Introduction to Pascal Programming
+time=1205181631
+author:1205181631=Bob
+diff:1205181631:1205180941:=1,13c1%0a%3c ! Robert Batzinger: Teaching Experience%0a%3c %0a%3c * 2007 Bio L391 Introduction to Biostatistics (Half Semester)%0a%3c %0a%3c * 2007 Info I400 Introduction to Bioinformatics (Half Semester)%0a%3c %0a%3c * 2006-Present CSCI A340 Introduction to Web Programming.%0a%3c %0a%3c * 1992-2003 Introduction to Perl Text Processing.%0a%3c %0a%3c * 1988-1994 Introduction to SNOBOL Text Processing.%0a%3c %0a%3c * 1982 Introduction to Pascal Programming%0a\ No newline at end of file%0a---%0a> ! robertBatzinger%0a
+host:1205181631=149.161.75.2
+author:1205180941=Bob
+diff:1205180941:1205180941:=1d0%0a%3c ! robertBatzinger%0a
+host:1205180941=149.161.75.2

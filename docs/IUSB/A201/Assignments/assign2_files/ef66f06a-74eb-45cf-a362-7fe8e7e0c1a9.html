@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Assignments</title>
+    <link href="SP09-SB-CSCI-A201-27137_data/tool_base.css" type="text/css" rel="stylesheet" media="all">
+<link href="SP09-SB-CSCI-A201-27137_data/tool.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" language="JavaScript" src="assign2_files/headscripts.js"></script>
+	
+    
+    		<!-- vm/editor/FCKeditor/sakai_header.vm -->
+	<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/fckeditor.js"></script>
+    
+  </head>
+  <body onload="setMainFrameHeight('Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9');setFocus(focus_path);">
+<script type="text/javascript" src="assign2_files/jquery.js"></script>
+<link href="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignment.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignments.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    setupToggleAreas('toggleAnchor', 'toggledContent', false, 'fast');
+    $('#submissionFileCount').val(1);
+    $('#addMoreAttachmentControls').click(function(e){
+        e.preventDefault();
+        if ($('#submissionFileCount').val() < 5) {
+            var $input = $('#clonableUpload').clone().removeAttr('id').addClass('cloned').appendTo('#clonedHolder').children('input');
+            $input.val('');
+            var $count = $('#submissionFileCount').val();
+            var $nameCount = "upload"+$count;
+            $input.attr("name", $nameCount);
+            $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) + 1);
+            if ($('#submissionFileCount').val() == 5) {
+                $('#addMoreAttachmentControls').hide();
+                $('#addMoreAttachmentControlsInactive').show();
+            }
+        }
+        $('.cloned a').show();
+        resizeFrame('grow');
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) - 1);
+    if ($('#submissionFileCount').val() < 5) {
+        $('#addMoreAttachmentControls').show();
+        $('#addMoreAttachmentControlsInactive').hide();
+    }
+};
+
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm && theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm && theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+</script>
+
+
+<div class="portletBody">
+								<div class="alertMessage">The close date of the assignment has passed. You can no longer submit an answer.</div><div class="clear"></div>
+				<table class="itemSummary" summary="The assignment info">
+				<tbody><tr>
+					<th>
+						Title
+					</th>
+					<td>
+						Assignment 2
+																	</td>
+				</tr>
+				<tr>
+					<th>
+						Due
+					</th>
+					<td>
+						Feb 9, 2009 5:00 pm
+					</td>
+				</tr>
+																					<tr>
+					<th>
+						Status
+					</th>
+					<td>
+																					In progress
+																		</td>
+				</tr>
+																			<tr>	
+							<th>
+								Grade Scale
+							</th>
+							<td>
+								Ungraded
+															</td>
+						</tr>
+																						<tr>
+						<th>
+								Modified by instructor
+						</th>
+						<td>
+							Feb 4, 2009 1:33 pm
+						</td>
+					</tr>
+											</tbody></table>
+		<h4>
+			Instructions
+		</h4>
+		
+					<div class="textPanel"><h2>Implementing a class library</h2>
+In the first lecture, we discussed the design of a pet class. For your 
+convenience I have repeated the story and the UML diagram below:
+<h4>Background Story:</h4>
+Mary: Daddy, can I have another pet?<br>
+Dad:&nbsp; You already have a dog, a mouse and a hamster.<br>
+Mary: But I want to get a rabbit too!<br>
+Dad:&nbsp; Do you realize that how much more work and expense that will be?<br>
+Mary: But I will take good care of it and give it a nice name!!<br>
+Dad:&nbsp; You will have to prove it for me. Also, every new kind of pet<br>
+&nbsp;&nbsp;&nbsp; requires special ways to be fed and watered. You will have to<br>
+&nbsp;&nbsp;&nbsp; learn how to care for it properly.<br>
+Mary: I will, I will. I'll figure out it out and give it food and<br>
+&nbsp;&nbsp;&nbsp; water every day.<br>
+Dad:&nbsp; But you do not have that many animals and you get so mixed up<br>
+&nbsp;&nbsp;&nbsp; with those you do have.&nbsp; Just tonight you gave the cat dog<br>
+&nbsp;&nbsp;&nbsp; food and put the hamster water bottle in the bird cage.<br>
+Mary: I get all mixed up sometimes.<br>
+Dad:&nbsp; But unless you can prove that you can take care of the ones you<br>
+&nbsp;&nbsp;&nbsp; have, I am not buying you any other kind of pet.<br>
+Mary: Maybe if you could write a program to remind me it would be<br>
+&nbsp;&nbsp;&nbsp; easier.<br>
+Dad:&nbsp; I will talk to my students and see if they could make a<br>
+&nbsp;&nbsp;&nbsp; tamagotchi for you.<br>
+<h3>Class Design<img alt="Pet Class" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/petclass.jpg"></h3>
+<h3>Description of the Assignment:</h3>
+The goal of this assignment is to develop a file called <b>pet.rb</b> which contains the Ruby code for implementing the 4 classes: <b>Dog, Cat, Horse, </b>and <b>Rabbit</b> as well the abstract class <b>Pet</b>.
+ The class definition will need to implement the attributes and the 
+methods as shown in the design.&nbsp;  The four classes are to inherit 
+the methods and attributes of the abstract class. Use the interactive 
+mode of Ruby to test your class definition and submit the pet.rb file to
+ your drop box.<br>
+<br>
+The predicate methods that check whether or not the pet has been fed or 
+watered should use a simple comparison of the current time (written in 
+Ruby code as Time.now) against the last time the pet has been fed or 
+watered. If that difference is less than 24hrs then we can assume the 
+pet has not been fed. Time.at(0) will return 31 Dec 1969 which could be 
+useful when initializing any time variable/attribute.<br>
+<br>
+Hint: The Time class is built into the standard Ruby library. Time.now 
+will provide the current time. This quantity can be assigned to a 
+variable and if you subtract two values of time you will get the 
+difference measured in seconds.<br>
+<br>
+If implemented correctly, your class definition should produce output 
+under irb that is similar to the following&nbsp; screen shot:<br>
+<tt><br>
+C:\A201&gt;irb<br>
+irb(main):001:0&gt; require 'pet.rb'<br>
+=&gt; true<br>
+irb(main):002:0&gt; pet1 = Horse.new('Flash')<br>
+=&gt; #&lt;Horse:0x2cd3d84 @food="hay", @last_watering=Wed Dec 31 19:00:00 -0500 1969, @name="Flash", @wat<br>
+er_container="trough", @last_feeding=Wed Dec 31 19:00:00 -0500 1969&gt;<br>
+irb(main):003:0&gt; pet1.watered?<br>
+=&gt; false<br>
+irb(main):004:0&gt; pet1.water<br>
+Refilling the water trough for Flash<br>
+=&gt; Sun Feb 01 21:17:34 -0500 2009<br>
+irb(main):005:0&gt; pet1.watered?<br>
+=&gt; true<br>
+irb(main):006:0&gt; pet2 = Cat.new("Fluffy")<br>
+=&gt; #&lt;Cat:0x2cccda4 @food="cat food", @last_watering=Wed Dec 31 19:00:00 -0500 1969, @name="Fluffy",<br>
+@water_container="dish", @last_feeding=Wed Dec 31 19:00:00 -0500 1969&gt;<br>
+irb(main):007:0&gt; pet2.fed?<br>
+=&gt; false<br>
+irb(main):008:0&gt; pet2.feed<br>
+Giving Fluffy some cat food<br>
+=&gt; Sun Feb 01 21:22:22 -0500 2009<br>
+irb(main):009:0&gt; pet2.fed?<br>
+=&gt; true<br>
+irb(main):010:0&gt; pet3 = Rabbit.new("Peter")<br>
+=&gt; #&lt;Rabbit:0x2cc5fe0 @food="rabbit pellets", @last_watering=Wed Dec 31 19:00:00 -0500 1969, @name="<br>
+Peter", @water_container="bottle", @last_feeding=Wed Dec 31 19:00:00 -0500 1969&gt;<br>
+irb(main):011:0&gt; pet3.fed?<br>
+=&gt; false<br>
+irb(main):012:0&gt; pet3.feed<br>
+Giving Peter some rabbit pellets<br>
+=&gt; Sun Feb 01 21:24:20 -0500 2009<br>
+irb(main):013:0&gt; pet3.fed?<br>
+=&gt; true<br>
+irb(main):014:0&gt; pet3.food<br>
+=&gt; "rabbit pellets"<br>
+irb(main):015:0&gt; pet3.food<br>
+=&gt; "rabbit pellets"<br>
+irb(main):016:0&gt; pet2.food<br>
+=&gt; "cat food"<br>
+irb(main):017:0&gt; pet1.food<br>
+=&gt; "hay"<br>
+irb(main):018:0&gt; pet1.water_container<br>
+=&gt; "trough"<br>
+irb(main):019:0&gt; pet2.water_container<br>
+=&gt; "dish"<br>
+irb(main):020:0&gt; pet3.water_container<br>
+=&gt; "bottle"<br>
+irb(main):021:0&gt; quit<br>
+<br>
+C:\A201&gt;<br>
+</tt>
+<h3>Extra credit:</h3>
+In the above example, pet objects are created in this manner:<br>
+<br>
+<code>pet1 = Horse.new("Black Beauty")<br>
+pet2 = Dog.new("Spot")<br>
+pet3 = Cat.new("Buffy")<br>
+pet4 = Rabbit.new("Thumper")</code><br>
+<br>
+Submit another version of pet.rb in which there is only one class <b>Pet</b>. Instances of this class are to be created in this manner:<br>
+<br>
+<code>pet1 = Super_Pet.new("Black Beauty",:horse)<br>
+pet2 = Super_Pet.new("Spot",:dog)<br>
+pet3 = Super_Pet.new("Buffy",:cat)<br>
+pet4 = Super_Pet.new("Thumper",:rabbit)</code><br>
+<br>
+Please adjust the rest of the methods so that they will produce the same
+ output as that shown in the irb test given above. Submit your code for 
+this version in your drop box under the name <b>superpet.rb <br>
+</b><br></div>
+																									        	<script type="text/javascript" language="JavaScript">
+
+function saveChanges(formName, textAreaId) {
+	var _textArea = document.getElementById(textAreaId);
+	if (_textArea != null) {
+		if (typeof FCKeditorAPI != "undefined") {
+			var editor = FCKeditorAPI.GetInstance(textAreaId);
+			document[formName].savedText.value = editor.GetXHTML(false);
+		}
+	}
+}
+
+iframeId = 'Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9';
+
+</script>
+<form name="form" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post">
+	<input name="sakai_action" value="" type="hidden">
+	<input name="providerId" value="" type="hidden">
+	<input name="criteria" value="" type="hidden">
+	<input name="savedText" value="" type="hidden">
+					</form>
+				<hr class="itemSeparator">
+						<h3>Submission</h3> 
+		
+
+
+					<form name="addSubmissionForm" id="addSubmissionForm" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post" onsubmit="return true;" enctype="multipart/form-data">
+		<input name="eventSubmit_doRead_add_submission_form" value="x" type="hidden">
+		<input name="option" id="option" value="cancel" type="hidden">
+		<input name="currentAttachment" value="" type="hidden">
+		<input name="assignmentId" value="/assignment/a/SP09-SB-CSCI-A201-27137/8cebc61a-fcf8-4796-9815-b8cb82498161" type="hidden">
+																															No attachments yet
+																<p class="act">
+				<input name="cancel" accesskey="x" id="cancel" value="Done" onclick="document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value='cancel'; document.addSubmissionForm.submit(); return false;" type="button">
+			</p>
+			</form>
+	</div>
+
+</body></html>

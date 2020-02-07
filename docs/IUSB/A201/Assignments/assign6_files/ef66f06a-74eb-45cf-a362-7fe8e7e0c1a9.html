@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Assignments</title>
+    <link href="SP09-SB-CSCI-A201-27137_data/tool_base.css" type="text/css" rel="stylesheet" media="all">
+<link href="SP09-SB-CSCI-A201-27137_data/tool.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" language="JavaScript" src="assign6_files/headscripts.js"></script>
+	
+    
+    		<!-- vm/editor/FCKeditor/sakai_header.vm -->
+	<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/fckeditor.js"></script>
+    
+  </head>
+  <body onload="setMainFrameHeight('Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9');setFocus(focus_path);">
+<script type="text/javascript" src="assign6_files/jquery.js"></script>
+<link href="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignment.css" type="text/css" rel="stylesheet" media="all">
+<script type="text/javascript" src="ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9_data/assignments.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    setupToggleAreas('toggleAnchor', 'toggledContent', false, 'fast');
+    $('#submissionFileCount').val(1);
+    $('#addMoreAttachmentControls').click(function(e){
+        e.preventDefault();
+        if ($('#submissionFileCount').val() < 5) {
+            var $input = $('#clonableUpload').clone().removeAttr('id').addClass('cloned').appendTo('#clonedHolder').children('input');
+            $input.val('');
+            var $count = $('#submissionFileCount').val();
+            var $nameCount = "upload"+$count;
+            $input.attr("name", $nameCount);
+            $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) + 1);
+            if ($('#submissionFileCount').val() == 5) {
+                $('#addMoreAttachmentControls').hide();
+                $('#addMoreAttachmentControlsInactive').show();
+            }
+        }
+        $('.cloned a').show();
+        resizeFrame('grow');
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $('#submissionFileCount').val(parseInt($('#submissionFileCount').val(), 10) - 1);
+    if ($('#submissionFileCount').val() < 5) {
+        $('#addMoreAttachmentControls').show();
+        $('#addMoreAttachmentControlsInactive').hide();
+    }
+};
+
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm && theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm && theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+</script>
+
+
+<div class="portletBody">
+								<div class="alertMessage">The close date of the assignment has passed. You can no longer submit an answer.</div><div class="clear"></div>
+				<table class="itemSummary" summary="The assignment info">
+				<tbody><tr>
+					<th>
+						Title
+					</th>
+					<td>
+						Assignment 6.
+																	</td>
+				</tr>
+				<tr>
+					<th>
+						Due
+					</th>
+					<td>
+						Apr 1, 2009 11:55 pm
+					</td>
+				</tr>
+																					<tr>
+					<th>
+						Status
+					</th>
+					<td>
+																					In progress
+																		</td>
+				</tr>
+																			<tr>	
+							<th>
+								Grade Scale
+							</th>
+							<td>
+								Ungraded
+															</td>
+						</tr>
+																						<tr>
+						<th>
+								Modified by instructor
+						</th>
+						<td>
+							Mar 27, 2009 9:48 am
+						</td>
+					</tr>
+											</tbody></table>
+		<h4>
+			Instructions
+		</h4>
+		
+					<div class="textPanel"><h3 style="color: Red;">EXTENDING THE PETMINDER APPLICATION<br>
+<br>
+Part 1. Writing YAML strings to a file.</h3>
+Ruby provides support for a<span style="font-family: monospace;"> </span>human-friendly,
+ data rendering system called YAML (whose initials stands for YAML Ain't
+ Markup Language). This library class allows the user to convert any 
+Ruby object into a string that could be written to a file. The string is
+ easy to read and could be edited in a text editor. At the same time, 
+the use of punctuation and indentation within YAML allows YAML strings 
+to be read back into memory.<br>
+<br>
+For example, given this array of strings:<br>
+<br>
+<code>a = ['red','green','blue']</code><br>
+<br>
+we can print the YAML equivalent:<br>
+<br>
+<code>puts a.to_yaml</code><br>
+<br>
+giving this on the screen:<br>
+<br>
+<code>--- <br>
+- red<br>
+- green<br>
+- blue</code><br>
+<br>
+Write a method called <code>store_yaml</code> for the <code>Collection</code> class of your pet minder program that will write an object to a file called <code>test.yml</code>.
+ Prove to yourself that you can use this method for storing Ruby objects
+ by writing an array of&nbsp; array, a hash, a strings and a pets to a 
+file.&nbsp; The following code should be used to<br>
+test your method:<br>
+<br>
+require 'yaml'<br>
+mypets = Collection.new()<code><br>
+dog = Dog.new("Spot")<br>
+cat = Cat.new("Buffy")<br>
+myarray = [1,2,3]<br>
+myhash = {:smile =&gt; ':)', :frown =&gt; ':(', :crying =&gt; ';(', :joking =&gt; ';)'}<br>
+mytest = ['Hello',3.14159,dog,cat]<br>
+mypets.store_yaml(mytest)</code><br>
+<br>
+<br>
+Please submit the yaml file you have created.
+<h3 style="color: Red;"><br>
+Part 2. Reading a YAML string into an object.</h3>
+The class method YAML::load can be used to read a yaml string into a Ruby object. Thus,<br>
+<br>
+<code>b = YAML::load( "--- \n- red\n- green\n- blue\n")</code><br>
+<br>
+will create an array called <code>b</code> which is identical to the array in variable a in the section above.<br>
+<br>
+Write a method called <code>read_yaml</code> for the <code>Collection</code> class of the pet minder that will read the objects from a file called <code>test.yml</code>. Prove to yourself that you can use this method for loading the assortment of Ruby objects you have stored in the file.<br>
+<br>
+<h3 style="color: Red;">Part 3. Modify the read_yaml and store_yaml files</h3>
+<p>Modify these files to store and load only the instance variable <code>@pets </code>in the class <code>Collection</code>.</p>
+<h3 style="color: Red;">Part 4. Modify the petminder program</h3>
+Change the behavor of your petminder program so that it will automatically load the stored data only your pets from the file <code>pets.yml</code> if it exists. Also, update the program so that the contents of <code>@pets</code> is written to the file <code>pets.yml </code>just before the program quits and returns to the command prompt of the operating system.<br>
+<h3 style="color: Red;">Part 5. Submit your files to the dropbox.</h3>
+When finished, please place in your drop box the following 3 files resulting from this assignment:
+<ul>
+    <li>petminder.rb (your revised and updated version)</li>
+    <li>test.yml</li>
+    <li>pets.yml</li>
+</ul></div>
+																									        	<script type="text/javascript" language="JavaScript">
+
+function saveChanges(formName, textAreaId) {
+	var _textArea = document.getElementById(textAreaId);
+	if (_textArea != null) {
+		if (typeof FCKeditorAPI != "undefined") {
+			var editor = FCKeditorAPI.GetInstance(textAreaId);
+			document[formName].savedText.value = editor.GetXHTML(false);
+		}
+	}
+}
+
+iframeId = 'Mainef66f06ax74ebx45cfxa362x7fe8e7e0c1a9';
+
+</script>
+<form name="form" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post">
+	<input name="sakai_action" value="" type="hidden">
+	<input name="providerId" value="" type="hidden">
+	<input name="criteria" value="" type="hidden">
+	<input name="savedText" value="" type="hidden">
+					</form>
+				<hr class="itemSeparator">
+						<h3>Submission</h3> 
+		
+
+
+					<form name="addSubmissionForm" id="addSubmissionForm" action="https://oncourse.iu.edu/portal/tool/ef66f06a-74eb-45cf-a362-7fe8e7e0c1a9?panel=Main" method="post" onsubmit="return true;" enctype="multipart/form-data">
+		<input name="eventSubmit_doRead_add_submission_form" value="x" type="hidden">
+		<input name="option" id="option" value="cancel" type="hidden">
+		<input name="currentAttachment" value="" type="hidden">
+		<input name="assignmentId" value="/assignment/a/SP09-SB-CSCI-A201-27137/afef10d8-f737-4ac8-ad2d-533d300272b7" type="hidden">
+																															No attachments yet
+																<p class="act">
+				<input name="cancel" accesskey="x" id="cancel" value="Done" onclick="document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value='cancel'; document.addSubmissionForm.submit(); return false;" type="button">
+			</p>
+			</form>
+	</div>
+
+</body></html>
