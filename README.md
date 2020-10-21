@@ -3,7 +3,7 @@
 # _Robert P Batzinger_
 > _Praeceptor Emeritus_<br />
 > Payap University<br />
-> Faculty of Science<br />
+> Department of Computer Science<br />
 > Amphur Muang<br />
 > Chiang Mai 50000<br />
 > Thailand<br />
@@ -16,13 +16,15 @@
 
 # Experience
 * Summer Intern - New York State Rabies Screening Laboratory
-* Undergraduate Research Opportunity Interrn - Environmental Health Sciences Center, Massachuesetts Institute of Technology
+* Undergraduate Research Opportunity Intern - Environmental Health Sciences Center, Massachusetts Institute of Technology
+* Urban Vehicle Design Competition - Team communications and logistics officer, Massachusetts Institute of Technology
 * Research Assistant - Wellcome Laboratory, Johns Hopkins University 
 * Post Doctoral Fellow - McArdle Laboratory, University of Wisconsin at Madison
 * Project Head - Faculty of Pharmacy, Payap University
 * Acting Dean - Faculty of Science, Payap University
 * Software Development Lead - Computer-Assisted Text Processing Center, Thailand Bible Society
 * Director - United Bible Society Asia-Pacific Regional Computer-Assisted Text Processing Center
+* Office Manager - Martin Kehoe Law Office - Guilderland, NY
 * Informatics Lab Manager - Indiana University - South Bend
 * Computer Science Instructor - Payap University
 * IT Director - Payap University
@@ -33,7 +35,7 @@
 * Natural language processing to automate prepublication editing support
 * Web and online community development and e-business
 * Blended and online education for higher education and livelong learning
-* Bible study and life application
+* Bible study and its life applications
 
 # Project experience with Languages
 * Computer programming: Fortran 4, 6809 Assembler, C, BASIC, Forth, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, Fortran 77, TeX, Metafont, XLISP, Visual Basic, SQL, Python, LaTeX, VBA, Ruby, Java, PHP, Ruby on Rails, R, JavaScript, Angular JS, Node JS, NoSQL, Bender
