@@ -38,14 +38,14 @@
 * Bible study and its life applications
 
 # Project experience with Languages
-* Computer programming: Fortran 4, 6809 Assembler, C, BASIC, Forth, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, Fortran 77, TeX, Metafont, XLISP, Visual Basic, SQL, Python, LaTeX, VBA, Ruby, Java, PHP, Ruby on Rails, R, JavaScript, Angular JS, Node JS, NoSQL, Bender
+* Computer programming: Fortran 4, 6809 Assembler, C, MS BASIC, Forth, Z80 Assembler, Pascal, Lisp, C++, AWK, SNOBOL, APL, troff, SPITBOL, Perl, SmallTalk, Icon, Fortran 77, TeX, Metafont, XLISP, Visual Basic, SQL, Python, LaTeX, VBA, Ruby, Java, PHP, Ruby on Rails, R, JavaScript, Angular JS, Node JS, NoSQL, Bender, Julia
 * Human: English, Thai, French, German
 * OS Command shells: CP/M, UNIX, MSDOS, MS Windows, OsX, Linux, KSH, BASH, SSH, Ardunio, Android
 * Version control: RCS, CVS, Subversion, Bazaar, GIT
 * Open standards: HTML, CSS, XML, RSS, GPX, Unicode, ISO9001, ISO29110
 
 # Contact Info
-* [Web Page](http://science.payap.ac.th/cs/bob)
+* [Web Page](https://rbatzing.github.io)
 * [LinkedIn](https://www.linkedin.com/in/robert-batzinger)
 * [Twitter](https://twitter.com/rbatz)
 
