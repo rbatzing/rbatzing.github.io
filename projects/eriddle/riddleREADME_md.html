@@ -64,8 +64,6 @@
   
     <li><a href="./riddleREADME_md.html">riddleREADME</a>
   
-    <li><a href="./riddledoc_md.html">riddledoc</a>
-  
   </ul>
 </div>
 
@@ -77,25 +75,39 @@
 <h1 id="label-Einstein-27s+Puzzle">Einstein&#39;s Puzzle<span><a href="#label-Einstein-27s+Puzzle">&para;</a> <a href="#top">&uarr;</a></span></h1>
 <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Einstein1921_by_F_Schmutzer_3.jpg/256px-Einstein1921_by_F_Schmutzer_3.jpg" align="right"/>
 
-<p>This is an attempt to demonstrate the use of a recursive, depth-first search to find the solution of Einstein's Puzzle using the Ruby language. The software was created as a Ruby class +Riddle+ that can solve similar puzzles where different combinations of symbols are added to a 5x5 grid.</p>
+<p>This is an attempt to demonstrate the use of the Ruby language to implement a recursive, depth-first search to find the solution of Einstein's Puzzle. The software was created as a Ruby class +Riddle+ that can solve similar puzzles where different combinations of symbols are added to a 5x5 grid.</p>
 </div>
-<p>This documentation is in 3 parts:</p>
+<p>This documentation exists in 3 parts:</p>
 <ul><li>
 <p><a href="riddledoc_md.html">Background information</a> compiled from <a
-href="riddledoc_md.html">riddledoc.md</a> - a description of the puzzle and
-the data structure and algorithm used to find a solution</p>
+href="riddledoc.md">riddledoc.md</a> - a description of the puzzle and the
+data structure and algorithm used to find a solution</p>
 </li><li>
 <p><a href="Riddle.html">Description of the riddle solving class</a> compiled
-from riddle.rb - Class definition of <a href="Riddle.html">Riddle</a></p>
+from <a href="riddle.rb">riddle.rb</a> - Class definition of <a
+href="Riddle.html">Riddle</a></p>
 </li><li>
 <p><a href="index.html">Core HTML index file</a> compiled from <a
-href="riddleREADME_md.html">riddleREADME.md</a> - generates this page</p>
+href="riddleREADME.md">riddleREADME.md</a> - generates this page</p>
 </li></ul>
 
 <p>The following command line was used to create the documentation from the
 source files.</p>
 
 <pre> rdoc --main=riddleREADME.md riddleREADME.md riddledoc.rdoc riddle.rb</pre>
+
+<p>The solution to the riddle is determined by running the following command
+line.</p>
+
+<pre class="ruby"> <span class="ruby-identifier">ruby</span> <span class="ruby-identifier">riddle</span>.<span class="ruby-identifier">rb</span>
+</pre>
+<hr>
+
+<p>Programmed and documented by Robert Batzinger as part of exercises in the
+CS101 Discrete Math offered at Payap University, Chiang Mai, Thailand. All
+inquiries should be submitted to robert_b at payap dot ac dot th</p>
+
+<p>© Copyright 2021, Robert Batzinger. All rights reserved.</p>
 </main>
 
 

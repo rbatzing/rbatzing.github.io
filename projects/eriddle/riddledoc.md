@@ -4,12 +4,11 @@
 
 Please send inquiries to mailto:robert_b@payap.ac.th
 
-<table>
-<tr>
-<td>
-<h1>Background</h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Einstein1921_by_F_Schmutzer_3.jpg/256px-Einstein1921_by_F_Schmutzer_3.jpg" align="right></p>
 
-<p>According to popular press, Albert Einstein made up a really
+= Background
+
+According to popular press, Albert Einstein made up a really
 difficult riddle when he was just a young child. Later as an university
 professor, he would give this riddle to his students and found that
 over 98% of them failed to find the solution. While the background to
@@ -17,18 +16,14 @@ this story may not be true, this popular logic puzzle is very
 difficult and has earned its name as "Einstein's Riddle." Several
 versions of this riddle exist because some of the cigarette brands
 have gone out of business.
-</p>
-<h1>The Clues</h1>
 
-<p>In this riddle, each of the five houses is painted a different color,
+# The Clues
+
+In this riddle, each of the five houses is painted a different color,
 and their inhabitants are of different national extractions, own
 different pets, drink different beverages and smoke different
 brands of American cigarettes. The objective is to determine the
 details associated with each house.
-</p></td>
-<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Einstein1921_by_F_Schmutzer_3.jpg/256px-Einstein1921_by_F_Schmutzer_3.jpg"></td>
-</tr>
-</table>
 
 * There are five houses.
 * The Englishman lives in the red house.

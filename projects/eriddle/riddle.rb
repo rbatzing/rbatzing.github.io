@@ -287,7 +287,7 @@ end
 ##
 # Run the riddle if this class file called directly
 
-if FILE==$0
+if __FILE__==$0
   r = Riddle.new(
     [  # Rule related to a house       Associated neighbor attributes
       [2,nil,nil,nil,:milk,nil,          nil,nil,nil,nil,nil,nil],
