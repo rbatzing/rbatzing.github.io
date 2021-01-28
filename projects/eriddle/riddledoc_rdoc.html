@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>riddledoc - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/navigation.js" defer></script>
+<script src="./js/search.js" defer></script>
+<script src="./js/search_index.js" defer></script>
+<script src="./js/searcher.js" defer></script>
+<script src="./js/darkfish.js" defer></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#label-Background">Background</a>
+    <li><a href="#label-The+Clues">The Clues</a>
+    <li><a href="#label-The+Riddle">The Riddle</a>
+    <li><a href="#label-The+Search+Algorithm">The Search Algorithm</a>
+    <li><a href="#label-The+Solution">The Solution</a>
+  </ul>
+</div>
+
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./riddleREADME_md.html">riddleREADME</a>
+  
+    <li><a href="./riddledoc_rdoc.html">riddledoc</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page riddledoc.rdoc">
+
+<pre>riddle.rb - A Ruby program to solve Einstein&#39;s Riddle</pre>
+
+<p>© Copyright 2021, Robert Batzinger. All rights reserved.</p>
+
+<h1 id="label-Background">Background<span><a href="#label-Background">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>&lt;table&gt; &lt;tr&gt; &lt;td&gt;According to popular press, Albert
+Einstein made up a really difficult riddle when he was just a kid. Later as
+an university professor would give this riddle to his students and found
+that 98% of them failed to find the solution. While the background to this
+story may not be true, this popular logic puzzle is very difficult and has
+earned it name as “Einstein&#39;s <a href="Riddle.html">Riddle</a>.”
+Several versions of this riddle exist because some of the cigarette brands
+have gone out of business.&lt;td&gt; &lt;td&gt; <img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Einstein1921_by_F_Schmutzer_3.jpg/256px-Einstein1921_by_F_Schmutzer_3.jpg"
+/> &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</p>
+
+<h1 id="label-The+Clues">The Clues<span><a href="#label-The+Clues">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>In this riddle, each of the five houses is painted a different color, and
+their inhabitants are of different national extractions, own different
+pets, drink different beverages and smoke different brands of American
+cigarettes. The objective is to determine the details associated with each
+house.</p>
+<ul><li>
+<p>There are five houses.</p>
+</li><li>
+<p>The Englishman lives in the red house.</p>
+</li><li>
+<p>The Spaniard owns the dog.</p>
+</li><li>
+<p>Coffee is drunk in the green house.</p>
+</li><li>
+<p>The Ukrainian drinks tea.</p>
+</li><li>
+<p>The green house is immediately to the right of the ivory house.</p>
+</li><li>
+<p>The Old Gold smoker owns snails.</p>
+</li><li>
+<p>Kools are smoked in the yellow house.</p>
+</li><li>
+<p>Milk is drunk in the middle house.</p>
+</li><li>
+<p>The Norwegian lives in the first house.</p>
+</li><li>
+<p>The man who smokes Chesterfields lives in the house next to the man with
+the fox.</p>
+</li><li>
+<p>Kools are smoked in the house next to the house where the horse is kept.</p>
+</li><li>
+<p>The Lucky Strike smoker drinks orange juice.</p>
+</li><li>
+<p>The Japanese smokes Parliaments.</p>
+</li><li>
+<p>The Norwegian lives next to the blue house.</p>
+</li></ul>
+
+<h1 id="label-The+Riddle">The <a href="Riddle.html">Riddle</a><span><a href="#label-The+Riddle">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>Using the clues given in the last section, determine the answer to these
+questions.</p>
+<ul><li>
+<p>Who drinks water?</p>
+</li><li>
+<p>Who owns the zebra?</p>
+</li></ul>
+
+<h1 id="label-The+Search+Algorithm">The Search Algorithm<span><a href="#label-The+Search+Algorithm">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>Finding the solution requires both a means for organizing the data (data
+structure) and a method of finding the correct solution (algorithm). In
+this riddle there are 600 ways to arrange the details. The method used in
+this class is a recursive search for the placement of details that
+satisfies all clues. The nature of this approach is a brute force
+depth-first search that applies each rule to a possible position and
+attempting to add the next rule to the solution board. A failed attempt
+will terminate future the search for a solution and the next possible
+position will used to initiate the search down a new branch of combination.
+This branch pruning reduced greatly increased the efficient of the search
+by reducing the number of the attempt tested from 600 to 40.</p>
+
+<p>The assumption is that a successful search exists that satisfies the clues
+exists. All combinations that fail will terminate the search branch through
+subsets that use those combination. This approach used here is similar to
+that described in the TED-Ed Riddles YouTube Video by Dan Van der Vieren
+entitled “Can you solve &#39;Einstein’s Riddle&#39;? - <a
+href="https://youtu.be/1rDVz_Fb6HQ">youtu.be/1rDVz_Fb6HQ</a></p>
+
+<h1 id="label-The+Solution">The Solution<span><a href="#label-The+Solution">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>The program was using this command line:</p>
+
+<pre class="ruby"><span class="ruby-identifier">ruby</span> <span class="ruby-identifier">riddle</span>.<span class="ruby-identifier">rb</span>
+</pre>
+
+<p>The resulting output is shown below:</p>
+
+<pre>House 1: yellow,fox,kool,water,norway,
+House 2: blue,horse,chester,tea,ukraine,
+House 3: red,snail,oldgold,milk,english,
+House 4: green,zebra,parlment,coffee,japan,
+House 5: ivory,dog,lucky,orange,spain,</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
