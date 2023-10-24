@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.2.1 (Windows)"/>
+	<meta name="created" content="2023-10-24T21:53:40.340000000"/>
+	<meta name="changed" content="2023-10-24T22:10:46.866000000"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		h1 { margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h1.name {border-top: none; border-bottom: 1px solid #000000; border-left: none;
+		   border-right: none; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in;
+		   padding-right: 0in; font-size: 32pt }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "NSimSun"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Lucida Sans"; font-size: 24pt; font-weight: bold }
+		blockquote { margin-left: 0.39in; margin-right: 0.39in; background: transparent }
+		em { font-style: italic }
+		a:link { color: #000080; text-decoration: underline }
+		a:visited { color: #800000; text-decoration: underline }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
+<h1 class="name" align="center"><em>My Name</em></h1>
+<blockquote style="text-align: center; margin-bottom: 0in; border: none; padding: 0in">
+<em>Position</em><br/>
+Payap University, Department<br/>
+Amphur Muang, Chiang Mai 50000, Thailand</blockquote>
+<blockquote style="margin-bottom: 0in; border: none; padding: 0in"><br/>
+
+</blockquote>
+<blockquote style="text-align: center; margin-bottom: 0in; border: none; padding: 0in">
+Some comments about myself to attract interest in my application</blockquote>
+<h1 class="western" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0in"><a name="user-content-education"></a>
+<a href="https://github.com/rbatzing/rbatzing.github.io/blob/master/template.md#education"><span style="text-decoration: none"><span style="background: transparent">Education</span></span></a></h1>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Bachelor Degree</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Master	Degree</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Doctoral Degree</p></li>
+</ul>
+<h1 class="western" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0in"><a name="user-content-experience"></a>
+<a href="https://github.com/rbatzing/rbatzing.github.io/blob/master/template.md#experience"><span style="text-decoration: none"><span style="background: transparent">Experience</span></span></a></h1>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Experience 1</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Experience 2</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Experience 3</p></li>
+</ul>
+<h1 class="western" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0in"><a name="user-content-interests"></a>
+<a href="https://github.com/rbatzing/rbatzing.github.io/blob/master/template.md#interests"><span style="text-decoration: none"><span style="background: transparent">Interests</span></span></a></h1>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Interest 1</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Interest 2</p></li>
+</ul>
+<h1 class="western" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0in"><a name="user-content-special-skills"></a>
+<a href="https://github.com/rbatzing/rbatzing.github.io/blob/master/template.md#special-skills"><span style="text-decoration: none"><span style="background: transparent">Special
+skills</span></span></a></h1>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Skill 1</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0.06in">Skill 2</p></li>
+</ul>
+<h1 class="western" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.02in; padding-left: 0in; padding-right: 0in"><a name="user-content-contact-info"></a>
+<a href="https://github.com/rbatzing/rbatzing.github.io/blob/master/template.md#contact-info"><span style="text-decoration: none"><span style="background: transparent">Contact
+Info</span></span></a></h1>
+<ul>
+	<li><p style="margin-bottom: 0in"><a href="https://loginname.github.io/"><span style="background: transparent">Webpage</span></a></p></li>
+	<li><p style="margin-bottom: 0in"><a href="https://www.linkedin.com/in/LinkedinAccountName"><span style="background: transparent">LinkedIn</span></a></p></li>
+	<li><p style="margin-bottom: 0in"><a href="https://twitter.com/twittername"><span style="background: transparent">Twitter</span></a></p></li>
+</ul>
+</body>
+</html>
