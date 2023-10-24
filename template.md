@@ -1,4 +1,4 @@
-<img src="http://rbatzing.github.io/img/bob5.png" alt="RPB Photo" align="right" width="30%"/>
+<img src="https://images.app.goo.gl/7e7oB8iMrbAZ3wu46" alt="Photo" align="right" width="30%"/>
 
 # _Your Name_
 > _Position_<br />
