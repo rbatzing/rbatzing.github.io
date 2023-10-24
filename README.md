@@ -2,11 +2,10 @@
 
 # _Robert P Batzinger_
 > _Praeceptor Emeritus_<br />
-> Payap University<br />
-> Department of Computer Science<br />
-> Amphur Muang<br />
-> Chiang Mai 50000<br />
-> Thailand<br />
+> Payap University, Department of Computer Science<br />
+> Amphur Muang, Chiang Mai 50000, Thailand<br />
+
+> Computer Solutions Developer with decades of experience in Data Science and Big Data Analytics, Natural language Processing, Document Publishing Systems, and Web Community Development
 
 # Education
 * SB Chemistry - Massachusetts Institute of Technology
@@ -48,4 +47,6 @@
 * [Web Page](https://rbatzing.github.io)
 * [LinkedIn](https://www.linkedin.com/in/robert-batzinger)
 * [Twitter](https://twitter.com/rbatz)
+* [Google Scholar](https://scholar.google.com/citations?user=LYSacdYAAAAJ&hl=en)
+* [Research Gate](https://www.researchgate.net/profile/Robert-Batzinger)
 
