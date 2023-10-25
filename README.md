@@ -1,5 +1,5 @@
 <img src="http://rbatzing.github.io/img/bob5.png" alt="RPB Photo" align="right" width="30%"/>
-<img src="http://rbatzing.github.io/img/sandwich.jpg" alt="RPB Photo" align="right" width="30%"/>
+<img src="http://rbatzing.github.io/sandwich.jpg" alt="RPB Photo" align="right" width="30%"/>
 
 # _Robert P Batzinger_
 > _Praeceptor Emeritus_<br />
