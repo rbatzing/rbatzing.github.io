@@ -5,13 +5,12 @@
 > Payap University, Department of Computer Science<br />
 > Amphur Muang, Chiang Mai 50000, Thailand<br />
 
-> Computer Solutions Developer with decades of experience in Data Science and Big Data Analytics, Natural language Processing, Document Publishing Systems, 
-and Web Community Development as well as mutagenic and carcinogenic activities of anthelmintics
+> Computer Solutions Developer with decades of experience in Data Science and Big Data Analytics, Natural Language Processing, Document Publishing Systems, and Web Community Development as well as mutagenic and carcinogenic activities of anthelmintics
 
 # Education
 * SB Chemistry - Massachusetts Institute of Technology
 * PhD Pathobiology - Johns Hopkins University
-* NIH Post Doctoral Fellow - University of Wisconsin at Madison
+* NIH Post-Doctoral Fellow - University of Wisconsin at Madison
 * MS Applied Mathematics and Computer Science - Indiana University - South Bend
 
 # Experience
@@ -25,16 +24,16 @@ and Web Community Development as well as mutagenic and carcinogenic activities o
 * Software Development Lead - Computer-Assisted Text Processing Center, Thailand Bible Society
 * Director - United Bible Society Asia-Pacific Regional Computer-Assisted Text Processing Center
 * Office Manager - Martin Kehoe Law Office - Guilderland, NY
-* Informatics Lab Manager - Indiana University - South Bend
+* Informatics Lab Manager - Indiana University South Bend
 * Computer Science Instructor - Payap University
-* IT Director - Payap University
-* Praceptor Emeritus - Payap University
+* IT Director - IT Services, Payap University
+* Praceptor Emeritus - IT Department, International College, Payap University
 
 # Interests
-* Applied machine learning, data science, modeling and forecasting to assist decision making
+* Applied machine learning, data science, modeling, and forecasting to assist decision-making
 * Natural language processing to automate prepublication editing support
 * Web and online community development and e-business
-* Blended and online education for higher education and livelong learning
+* Blended and online education for higher education and lifelong learning
 * Bible study and its life applications
 
 # Project experience with Languages
