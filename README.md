@@ -3,7 +3,7 @@
 # _Robert P Batzinger_
 > _Praeceptor Emeritus_<br />
 > Payap University, Department of Computer Science<br />
-> AAAAAAAAAAAAAAAAAAAAAAA Amphur Muang, Chiang Mai 50000, Thailand<br />
+> Amphur Muang, Chiang Mai 50000, Thailand<br />
 
 > Computer Solutions Developer with decades of experience in Data Science and Big Data Analytics, Natural Language Processing, Document Publishing Systems, and Web Community Development as well as mutagenic and carcinogenic activities of anthelmintics
 
