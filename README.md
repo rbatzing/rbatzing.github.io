@@ -50,5 +50,3 @@
 * [Google Scholar](https://scholar.google.com/citations?user=LYSacdYAAAAJ&hl=en)
 * [Research Gate](https://www.researchgate.net/profile/Robert-Batzinger)
 
-
-XXXXXXXXX
